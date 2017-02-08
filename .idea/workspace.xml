@@ -2,30 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0ee5b0-1db8-4c28-875e-b4e683d0632d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/AbnormalPOI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/MyTime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/UserPOI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/MRCommon/MRCommonModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/UserBehaviorFilter/InputArgs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/UserBehaviorFilter/InputArgsParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/UserBehaviorFilter/KeyWordsFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/UserBehaviorFilter/UserBehaviorFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/LoggerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/TicketOrderFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/TicketRobber.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/TrainBehaviorCount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/TrainOrderFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/VacationClickTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/ods_client_behavior_hour.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/test/DistributeCacheTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/test/WordCount2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/util/Constant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/util/RandomGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/2017-01-05.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/ColumnToRow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/FileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/HadoopReadFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/RegExpUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/TimeUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/guavaExercise/PreconditionExercise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/math/Integration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/UserActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/VacationClickDebug.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/bean/EtlClientBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/bean/UserBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/etl_client.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/ods_client_behavior_hour.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/apps/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/apps/sendMail.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/ClassInherit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/PersonalContacts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/classObject.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/classTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/dictionary.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/exec_eval_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/file.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/fileBackup.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/fileTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/for.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/fun.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/if.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/inheritTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/lambdaTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/list.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/listOperationOptimization.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/module.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/objectAndReference.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/osModuleTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/poem.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/reprTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/sequence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/shoplist.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/str.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/sysModuleTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/tarfileTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/ticketRobber.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/touple.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/try_catch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/var.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTutorial/gettingStarted/webchatPush.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BigBang.iml" afterPath="$PROJECT_DIR$/BigBang.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HadoopTutorial/HadoopTutorial.iml" afterPath="$PROJECT_DIR$/HadoopTutorial/HadoopTutorial.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HadoopTutorial/pom.xml" afterPath="$PROJECT_DIR$/HadoopTutorial/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaTutorial/JavaTutorial.iml" afterPath="$PROJECT_DIR$/JavaTutorial/JavaTutorial.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaTutorial/pom.xml" afterPath="$PROJECT_DIR$/JavaTutorial/pom.xml" />
@@ -54,54 +82,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyTime.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/MyTime.java">
+      <file leaf-file-name="MRCommonModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/MRCommon/MRCommonModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserPOI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/UserPOI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+            <state relative-caret-position="442">
+              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
               <folding>
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HadoopTutorial/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="468">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,11 +136,16 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/MyTime.java" />
+        <option value="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/UserPOI.java" />
+        <option value="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/UserActivity.java" />
+        <option value="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/test.java" />
+        <option value="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/TimeUtil.java" />
+        <option value="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/etl_client.java" />
+        <option value="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/FileUtil.java" />
         <option value="$PROJECT_DIR$/JavaTutorial/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/HadoopTutorial/pom.xml" />
-        <option value="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/MyTime.java" />
-        <option value="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/UserPOI.java" />
       </list>
     </option>
   </component>
@@ -200,20 +225,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BigBang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BigBang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="HadoopTutorial" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -318,45 +329,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AbnormalPOI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BigBang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BigBang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HadoopTutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qunar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AbnormalPOI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
+              <option name="myItemId" value="MRCommon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,6 +346,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PythonTutorial" />
+      <recent name="$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar" />
       <recent name="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar" />
     </key>
   </component>
@@ -1003,12 +978,12 @@
       <option name="presentableId" value="Default" />
       <updated>1486535526659</updated>
       <workItem from="1486535528351" duration="184000" />
-      <workItem from="1486535836084" duration="1817000" />
+      <workItem from="1486535836084" duration="3336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2001000" />
+    <option name="totallyTimeSpent" value="3520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
@@ -1026,7 +1001,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50284415" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27272728" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22865014" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1101,30 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaTutorial/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1306">
-          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HadoopTutorial/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/MyTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1135,26 +1086,194 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/bean/UserPOI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="890">
           <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
           <folding>
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="false" />
+            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#473#474#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="false" />
+            <element signature="e#625#626#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#708#709#0" expanded="false" />
+            <element signature="e#886#887#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/UserBehaviorFilter/InputArgs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/bean/EtlClientBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/etl_client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/ods_client_behavior_hour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/guavaExercise/PreconditionExercise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/bean/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/VacationClickDebug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/RegExpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/ColumnToRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/HadoopReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/math/Integration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3297#4169#0" expanded="true" />
+            <element signature="e#4168#4169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonTutorial/apps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/UserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTutorial/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/MRCommon/MRCommonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HadoopTutorial/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>

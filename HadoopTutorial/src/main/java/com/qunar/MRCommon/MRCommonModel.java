@@ -38,7 +38,6 @@ public class MRCommonModel extends Configured implements Tool {
         }
     }
 
-    @Override
     public int run(String[] args) throws Exception {
         if (args.length != 4) {
             System.err.println("./run <input> <output> <reducetasknumber>");
