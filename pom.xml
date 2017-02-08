@@ -20,6 +20,7 @@
         <hadoop.core.version>1.2.1</hadoop.core.version>
         <junit.version>4.10</junit.version>
         <gson.version>2.7</gson.version>
+        <org.apache.version>3.4</org.apache.version>
     </properties>
 
     <dependencyManagement>
@@ -72,6 +73,16 @@
                 <artifactId>junit-dep</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${org.apache.version}</version>
             </dependency>
 
         </dependencies>
