@@ -13,5 +13,64 @@
         <module>HadoopTutorial</module>
     </modules>
 
+    <properties>
+        <guava.version>19.0</guava.version>
+        <commondata.version>0.0.1-SNAPSHOT</commondata.version>
+        <hadoop.version>2.2.0</hadoop.version>
+        <junit.version>4.10</junit.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}}</version>
+            </dependency>
+
+            <!--各业务线基础数据包-->
+            <dependency>
+                <groupId>com.qunar.mobile</groupId>
+                <artifactId>commondata</artifactId>
+                <version>${commondata.version}</version>
+            </dependency>
+
+            <!--hadoop-->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-common</artifactId>
+                <version>${hadoop.version}</version>
+            </dependency>
+
+            <!--hadoop调试-->
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-client</artifactId>
+                <version>${hadoop.version}</version>
+            </dependency>
+
+            <!-- java调试 -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit-dep</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+        </dependency>
+    </dependencies>
+
+
 
 </project>
