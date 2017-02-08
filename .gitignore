@@ -7,3 +7,10 @@
 将删除 PythonTutorial/
 将删除 pom.xml
 将删除 src/
+将删除 HadoopTutorial/src/main/java/com/qunar/MRFunctions/
+将删除 HadoopTutorial/src/main/resources/
+将删除 HadoopTutorial/src/test/
+将删除 HadoopTutorial/target/
+将删除 JavaTutorial/src/main/resources/
+将删除 JavaTutorial/src/test/
+*/target/*
