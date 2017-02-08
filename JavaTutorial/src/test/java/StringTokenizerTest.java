@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
  */
 public class StringTokenizerTest {
     public static void main(String[] args) {
-        StringTokenizer stringTokenizer=new StringTokenizer("this,is, a test");
+        StringTokenizer stringTokenizer=new StringTokenizer("this,is, a test",",",false);
         while (stringTokenizer.hasMoreTokens()){
             System.out.println(stringTokenizer.nextToken());
         }

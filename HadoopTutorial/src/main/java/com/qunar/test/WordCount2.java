@@ -46,8 +46,10 @@ public class WordCount2 {
         @Override
         public void setup(Context context) throws IOException, InterruptedException {
             conf = context.getConfiguration();
+            // 参数传递
             caseSensitive = conf.getBoolean("wordcount.case.sensitive", true);
             if (conf.getBoolean("wordcount.skip.patterns", true)) {
+                // 分布式缓存使用
                 URI[] patternsURIs = Job.getInstance(conf).getCacheFiles();
                 for (URI patternsURI : patternsURIs) {
                     Path patternsPath = new Path(patternsURI.getPath());
@@ -57,6 +59,7 @@ public class WordCount2 {
             }
         }
 
+        //
         private void parseSkipFile(String fileName) {
             try {
                 fis = new BufferedReader(new FileReader(fileName));
@@ -119,7 +122,9 @@ public class WordCount2 {
         List<String> otherArgs = new ArrayList<String>();
         for (int i = 0; i < remainingArgs.length; ++i) {
             if ("-skip".equals(remainingArgs[i])) {
+                // 添加分布式缓存
                 job.addCacheFile(new Path(remainingArgs[++i]).toUri());
+                // 参数传递
                 job.getConfiguration().setBoolean("wordcount.skip.patterns", true);
             } else {
                 otherArgs.add(remainingArgs[i]);

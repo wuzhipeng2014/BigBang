@@ -1,5 +1,7 @@
 package com.qunar.test;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
@@ -8,6 +10,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.compress.CompressionCodec;
 import org.apache.hadoop.io.compress.GzipCodec;
 import org.apache.hadoop.mapred.JobPriority;
+import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -17,39 +20,87 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
 import java.io.BufferedReader;
-import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
+import java.util.List;
+import java.util.Set;
 
 /**
- * Created by zhipengwu on 17-2-7.
- * MR中使用分布式缓存实现大文件共享
+ * Created by zhipengwu on 17-2-7. MR中使用分布式缓存实现大文件共享
  */
 public class DistributeCacheTest extends Configured implements Tool {
 
     public static class DistributeCacheTestMapper extends Mapper<Object, Text, Text, Text> {
 
+        Set<String> cacheSet = Sets.newHashSet();
+        private Configuration conf;
+        List<String> cacheList;
+
+        // 缓存文件读取
+        public List<String> readFile(String fileName) {
+            List<String> lists = Lists.newArrayList();
+            BufferedReader bufferedReader = null;
+            try {
+                bufferedReader = new BufferedReader(new FileReader(fileName));
+                String line = null;
+                try {
+                    while ((line = bufferedReader.readLine()) != null) {
+                        lists.add(line);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    bufferedReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            return lists;
+        }
+
         @Override
         protected void setup(Context context) throws IOException, InterruptedException {
             super.setup(context);
+            cacheList = Lists.newArrayList();
+            conf = context.getConfiguration();
             if (context.getCacheFiles() != null && context.getCacheFiles().length > 0) {
-                String path = context.getCacheFiles().toString();
-                File itermOccurrenceMatrix = new File(path);
-                FileReader fileReader = new FileReader(itermOccurrenceMatrix);
-                BufferedReader bufferedReader = new BufferedReader(fileReader);
-                String s;
-                while ((s = bufferedReader.readLine()) != null) {
-                    //TODO:读取每行内容进行相关的操作
+                URI[] cacheFiles = Job.getInstance(conf).getCacheFiles();
+                for (URI uri : cacheFiles) {
+                    Path path = new Path(uri.getPath());
+                    String filename = path.getName();
+                    readFile(filename);
+                    cacheList.addAll(readFile(filename));
                 }
-                bufferedReader.close();
-                fileReader.close();
+                Counter counter = context.getCounter("cacheFile", "cacheFileLength");
+                counter.increment(cacheList.size());
+
+                // String path = context.getCacheFiles()[0].getPath();
+                // File itermOccurrenceMatrix = new File(path);
+                // FileReader fileReader = new FileReader(itermOccurrenceMatrix);
+                // BufferedReader bufferedReader = new BufferedReader(fileReader);
+                // String s;
+                // while ((s = bufferedReader.readLine()) != null) {
+                // //TODO:读取每行内容进行相关的操作
+                // cacheSet.add(s);
+                // }
+                // bufferedReader.close();
+                // fileReader.close();
             }
         }
 
         @Override
         protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
-            super.map(key, value, context);
+            String line =value.toString();
+            int half=line.length()/2;
+           int subIndex=half<10?half:10;
+            context.write(new Text(line.substring(0,subIndex)),value);
 
         }
     }
@@ -59,19 +110,21 @@ public class DistributeCacheTest extends Configured implements Tool {
         protected void reduce(Text key, Iterable<Text> values, Context context)
                 throws IOException, InterruptedException {
             super.reduce(key, values, context);
+            for (Text value : values) {
+                context.write(NullWritable.get(), value);
+            }
         }
     }
+
     @Override
     public int run(String[] args) throws Exception {
-        if (args.length != 4) {
+        if (args.length != 3) {
             System.err.println("./run <input> <output> <reducetasknumber>");
             System.exit(1);
         }
         String inputPaths = args[0];
         String outputPath = args[1];
         int numReduceTasks = Integer.parseInt(args[2]);
-        String targetKey = args[3]; // 要提取的用户gid
-        System.out.println("##############:targetKey: " + targetKey);
 
         Configuration conf = this.getConf();
         conf.set("mapred.job.queue.name", "wirelessdev");
@@ -83,8 +136,6 @@ public class DistributeCacheTest extends Configured implements Tool {
         conf.set("mapred.job.priority", JobPriority.VERY_HIGH.name());
         conf.setBoolean("mapred.output.compress", true);
         conf.setClass("mapred.output.compression.codec", GzipCodec.class, CompressionCodec.class);
-        // 传递变量
-        conf.setStrings("target", targetKey);
 
         Job job = Job.getInstance(conf);
         job.setJobName("SuggestionList_ZhipengWu");
@@ -96,8 +147,9 @@ public class DistributeCacheTest extends Configured implements Tool {
         job.setOutputKeyClass(Text.class);
         job.setOutputKeyClass(NullWritable.class);
         job.setOutputValueClass(Text.class);
-        //将hdfs上的文件加入分布式缓存
-        job.addCacheFile(new URI("hdfs://url:port/filename#symlink"));
+        // 将hdfs上的文件加入分布式缓存
+        job.addCacheFile(new URI(
+                "hdfs://qunarcluster/user/wirelessdev/zhipeng.wu/testdata/train_order_20170108/part-r-00006.gz"));
 
         FileInputFormat.setInputPaths(job, inputPaths);
         FileOutputFormat.setOutputPath(job, new Path(outputPath));
