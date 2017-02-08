@@ -29,6 +29,9 @@ import java.util.Set;
 
 /**
  * Created by zhipengwu on 17-2-7. MR中使用分布式缓存实现大文件共享
+ *
+ * 运行方式:
+ *  sudo -uwirelessdev hadoop jar /home/q/zhipeng.wu/work/tmpData/HadoopTutorial-jar-with-dependencies.jar com.qunar.test.DistributeCacheTest  zhipeng.wu/testdata/train_order_20170108  zhipeng.wu/testdata/train_order_20170108_copy 8 hdfs://qunarcluster/user/wirelessdev/zhipeng.wu/testdata/input.txt
  */
 public class DistributeCacheTest extends Configured implements Tool {
 
@@ -78,8 +81,11 @@ public class DistributeCacheTest extends Configured implements Tool {
                     readFile(filename);
                     cacheList.addAll(readFile(filename));
                 }
-                Counter counter = context.getCounter("cacheFile", "cacheFileLength");
-                counter.increment(cacheList.size());
+
+                for (String line : cacheList) {
+                    Counter counter = context.getCounter("cacheFile", line);
+                    counter.setValue(line.length());
+                }
 
                 // String path = context.getCacheFiles()[0].getPath();
                 // File itermOccurrenceMatrix = new File(path);
@@ -97,10 +103,10 @@ public class DistributeCacheTest extends Configured implements Tool {
 
         @Override
         protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
-            String line =value.toString();
-            int half=line.length()/2;
-           int subIndex=half<10?half:10;
-            context.write(new Text(line.substring(0,subIndex)),value);
+            String line = value.toString();
+            int half = line.length() / 2;
+            int subIndex = half < 10 ? half : 10;
+            context.write(new Text(line.substring(0, subIndex)), value);
 
         }
     }
@@ -118,12 +124,13 @@ public class DistributeCacheTest extends Configured implements Tool {
 
     @Override
     public int run(String[] args) throws Exception {
-        if (args.length != 3) {
+        if (args.length != 4) {
             System.err.println("./run <input> <output> <reducetasknumber>");
             System.exit(1);
         }
         String inputPaths = args[0];
         String outputPath = args[1];
+        String cacheFile = args[3];
         int numReduceTasks = Integer.parseInt(args[2]);
 
         Configuration conf = this.getConf();
@@ -148,8 +155,8 @@ public class DistributeCacheTest extends Configured implements Tool {
         job.setOutputKeyClass(NullWritable.class);
         job.setOutputValueClass(Text.class);
         // 将hdfs上的文件加入分布式缓存
-        job.addCacheFile(new URI(
-                "hdfs://qunarcluster/user/wirelessdev/zhipeng.wu/testdata/train_order_20170108/part-r-00006.gz"));
+//        job.addCacheFile(new URI("hdfs://qunarcluster/user/wirelessdev/zhipeng.wu/testdata/input.txt.gz"));
+        job.addCacheFile(new URI(cacheFile));
 
         FileInputFormat.setInputPaths(job, inputPaths);
         FileOutputFormat.setOutputPath(job, new Path(outputPath));
