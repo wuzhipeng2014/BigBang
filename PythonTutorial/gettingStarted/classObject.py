@@ -5,8 +5,6 @@ class person:
 
     def __init__(self, name, var1=3):  # 初始化方法
         self.name = name  # 定义类的局部变量
-        self.age
-        self.country
         self.__var1 = var1
         person.population += 1
         print "hello, %s" % name
