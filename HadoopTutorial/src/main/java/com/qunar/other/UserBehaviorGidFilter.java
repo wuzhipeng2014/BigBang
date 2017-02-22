@@ -1,4 +1,4 @@
-package com.qunar.MRCommon;
+package com.qunar.other;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
@@ -19,18 +19,18 @@ import org.apache.hadoop.util.ToolRunner;
 import java.io.IOException;
 
 /**
- * Created by zhipengwu on 17-1-23. MapReduce统计框架 可以通过重写map 或reduce函数实现处理不同 note1. 不同需求传递的参数处理 note2.
+ * Created by zhipengwu on 17-2-20.
  */
-public class MRCommonModel extends Configured implements Tool {
+public class UserBehaviorGidFilter extends Configured implements Tool {
 
-    public static class MRCommonModelMapper extends Mapper<Object, Text, Text, Text> {
+    public static class UserBehaviorGidFilterMapper extends Mapper<Object, Text, Text, Text> {
         @Override
         protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
-            super.map(key, value, context);
+
         }
     }
 
-    public static class MRCommonModelReducer extends Reducer<Text, Text, NullWritable, Text> {
+    public static class UserBehaviorGidFilterReducer extends Reducer<Text, Text, NullWritable, Text> {
         @Override
         protected void reduce(Text key, Iterable<Text> values, Context context)
                 throws IOException, InterruptedException {
@@ -38,6 +38,7 @@ public class MRCommonModel extends Configured implements Tool {
         }
     }
 
+    @Override
     public int run(String[] args) throws Exception {
         if (args.length != 3) {
             System.err.println("./run <input> <output> <reducetasknumber>");
@@ -58,13 +59,13 @@ public class MRCommonModel extends Configured implements Tool {
         conf.setBoolean("mapred.output.compress", true);
         conf.setClass("mapred.output.compression.codec", GzipCodec.class, CompressionCodec.class);
         // 传递变量
-//        conf.setStrings("target", targetKey);
+        // conf.setStrings("target", targetKey);
 
         Job job = Job.getInstance(conf);
         job.setJobName("SuggestionList_ZhipengWu");
-        job.setJarByClass(MRCommonModel.class);
-        job.setMapperClass(MRCommonModelMapper.class);
-        job.setReducerClass(MRCommonModelReducer.class);
+        job.setJarByClass(UserBehaviorGidFilter.class);
+        job.setMapperClass(UserBehaviorGidFilterMapper.class);
+        job.setReducerClass(UserBehaviorGidFilterReducer.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(Text.class);
         job.setOutputKeyClass(Text.class);
@@ -82,7 +83,7 @@ public class MRCommonModel extends Configured implements Tool {
     public static void main(String[] args) {
         int status = 0;
         try {
-            status = ToolRunner.run(new MRCommonModel(), args);
+            status = ToolRunner.run(new UserBehaviorGidFilter(), args);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -11,6 +11,7 @@
     <modules>
         <module>JavaTutorial</module>
         <module>HadoopTutorial</module>
+        <module>SparkTutorial</module>
     </modules>
 
     <properties>
@@ -21,6 +22,7 @@
         <junit.version>4.10</junit.version>
         <gson.version>2.7</gson.version>
         <org.apache.version>3.4</org.apache.version>
+        <spark.version>2.1.0</spark.version>
     </properties>
 
     <dependencyManagement>
@@ -41,6 +43,13 @@
                 <groupId>com.qunar.mobile</groupId>
                 <artifactId>commondata</artifactId>
                 <version>${commondata.version}</version>
+            </dependency>
+
+            <!--spark-->
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-core_2.10</artifactId>
+                <version>${spark.version}</version>
             </dependency>
 
             <!--hadoop-->
@@ -89,13 +98,17 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.google.guava</groupId>-->
+            <!--<artifactId>guava</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.10</artifactId>
         </dependency>
     </dependencies>
 

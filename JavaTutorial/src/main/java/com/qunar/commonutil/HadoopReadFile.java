@@ -1,5 +1,12 @@
 package com.qunar.commonutil;
 
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
+import org.apache.hadoop.util.Progressable;
+
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,13 +15,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URI;
 import java.net.URL;
-
-import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FSDataOutputStream;
-import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IOUtils;
-import org.apache.hadoop.util.Progressable;
 
 /**
  * Created by zhipengwu on 16-8-22.
@@ -61,7 +61,7 @@ public class HadoopReadFile {
             Configuration configuration = new Configuration();
             FileSystem fs = FileSystem.get(URI.create(desFilePath), configuration);
             OutputStream out = fs.create(new Path(desFilePath), new Progressable() {
-                @Override
+//                @Override
                 public void progress() {
                     System.out.println(". ");
                 }

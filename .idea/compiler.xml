@@ -24,12 +24,14 @@
         <processorPath useClasspath="true" />
         <module name="HadoopTutorial" />
         <module name="JavaTutorial" />
+        <module name="SparkTutorial" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BigBang" target="1.5" />
       <module name="HadoopTutorial" target="1.6" />
       <module name="JavaTutorial" target="1.5" />
+      <module name="SparkTutorial" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
