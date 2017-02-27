@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class TicketOrderFilter {
     public static void main(String[] args) {
-        String filename="/home/zhipengwu/secureCRT/ticket_order_offline_20170212.gz";
+        String filename="/home/zhipengwu/secureCRT/ticket_order_offline_20170223.gz";
         int countNullOrderid=0;
         List<String> orderList= Lists.newArrayList();
         try {
@@ -30,7 +30,7 @@ public class TicketOrderFilter {
                     System.out.println(line);
                 }
             }
-            FileUtil.writeFile(orderList,"/home/zhipengwu/secureCRT/output/ticket_order_offline_20170212.txt");
+            FileUtil.writeFile(orderList,"/home/zhipengwu/secureCRT/output/ticket_order_offline_20170223.txt");
             System.out.println("#############: countNullOrderid= "+countNullOrderid);
 
         } catch (IOException e) {

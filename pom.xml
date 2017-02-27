@@ -23,6 +23,7 @@
         <gson.version>2.7</gson.version>
         <org.apache.version>3.4</org.apache.version>
         <spark.version>2.1.0</spark.version>
+        <jodatime.version>2.9.3</jodatime.version>
     </properties>
 
     <dependencyManagement>
@@ -92,6 +93,14 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${org.apache.version}</version>
+            </dependency>
+
+            <!--joda time-->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${jodatime.version}</version>
+                <scope>test</scope>
             </dependency>
 
         </dependencies>

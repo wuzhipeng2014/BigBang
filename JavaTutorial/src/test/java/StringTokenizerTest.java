@@ -1,3 +1,6 @@
+import org.joda.time.DateTime;
+import org.junit.Test;
+
 import java.util.StringTokenizer;
 
 /**
@@ -9,5 +12,12 @@ public class StringTokenizerTest {
         while (stringTokenizer.hasMoreTokens()){
             System.out.println(stringTokenizer.nextToken());
         }
+    }
+
+
+    @Test
+    public void test(){
+        String  MONTH = new DateTime().toString("M")+"月";
+        System.out.println(MONTH);
     }
 }
