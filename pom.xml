@@ -12,6 +12,7 @@
         <module>JavaTutorial</module>
         <module>HadoopTutorial</module>
         <module>SparkTutorial</module>
+        <module>ShellTutorial</module>
     </modules>
 
     <properties>
