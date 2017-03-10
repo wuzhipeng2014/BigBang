@@ -25,6 +25,7 @@
         <org.apache.version>3.4</org.apache.version>
         <spark.version>2.1.0</spark.version>
         <jodatime.version>2.9.3</jodatime.version>
+        <openCsv.version>2.3</openCsv.version>
     </properties>
 
     <dependencyManagement>
@@ -104,6 +105,13 @@
                 <scope>test</scope>
             </dependency>
 
+            <!--open csv-->
+            <dependency>
+                <groupId>net.sf.opencsv</groupId>
+                <artifactId>opencsv</artifactId>
+                <version>${openCsv.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -121,6 +129,87 @@
             <artifactId>spark-core_2.10</artifactId>
         </dependency>
     </dependencies>
+
+
+    <build>
+        <finalName>BigBang</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>./target/classes/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <excludes>
+                                <exclude>*.xls</exclude>
+                            </excludes>
+                        </configuration>
+                    </execution>
+                </executions>
+                <version>2.3.2</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass></mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <configuration>
+                    <excludeTransitive>false</excludeTransitive>
+                    <stripVersion>true</stripVersion>
+                    <outputDirectory>./lib</outputDirectory>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

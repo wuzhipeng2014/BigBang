@@ -29,11 +29,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BigBang" target="1.5" />
+      <module name="BigBang" target="1.6" />
       <module name="HadoopTutorial" target="1.6" />
-      <module name="JavaTutorial" target="1.5" />
-      <module name="ShellTutorial" target="1.5" />
-      <module name="SparkTutorial" target="1.5" />
+      <module name="JavaTutorial" target="1.6" />
+      <module name="ShellTutorial" target="1.6" />
+      <module name="SparkTutorial" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
