@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="HadoopTutorial" />
+        <module name="HiveTutorial" />
         <module name="JavaTutorial" />
         <module name="ShellTutorial" />
         <module name="SparkTutorial" />
@@ -31,6 +32,7 @@
     <bytecodeTargetLevel>
       <module name="BigBang" target="1.6" />
       <module name="HadoopTutorial" target="1.6" />
+      <module name="HiveTutorial" target="1.6" />
       <module name="JavaTutorial" target="1.6" />
       <module name="ShellTutorial" target="1.6" />
       <module name="SparkTutorial" target="1.8" />

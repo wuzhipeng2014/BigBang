@@ -14,5 +14,8 @@
 将删除 JavaTutorial/src/main/resources/
 将删除 JavaTutorial/src/test/
 */target/*
+target/*
+out/*
+.idea/*
 PythonTutorial/gettingStarted/*.pyc
 将删除 PythonTutorial/gettingStarted/classObject.pyc

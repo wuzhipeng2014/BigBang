@@ -32,4 +32,19 @@ public class StringTokenizerTest {
     }
 
 
+    @Test
+    public void testString(){
+        String type="search_analysis_click";
+        String typeStart=String.format("\"%s\": { ",type);
+        String mapping = typeStart
+                .concat("   \"properties\" : {")
+                .concat("       \"query\" : { \"type\" : \"string\", \"index\" : \"not_analyzed\",\"store\" : \"yes\"},")
+                .concat("       \"poi\" : { \"type\" : \"string\", \"index\" : \"not_analyzed\", \"store\" : \"yes\"},")
+                .concat("       \"platform\" : {\"type\" : \"string\", \"index\" : \"not_analyzed\" },\"store\" : \"yes\"}")
+                .concat("} }");
+        System.out.println(mapping);
+    }
+
+
+
 }

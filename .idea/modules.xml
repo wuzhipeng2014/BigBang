@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BigBang.iml" filepath="$PROJECT_DIR$/BigBang.iml" />
       <module fileurl="file://$PROJECT_DIR$/HadoopTutorial/HadoopTutorial.iml" filepath="$PROJECT_DIR$/HadoopTutorial/HadoopTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HiveTutorial/HiveTutorial.iml" filepath="$PROJECT_DIR$/HiveTutorial/HiveTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaTutorial/JavaTutorial.iml" filepath="$PROJECT_DIR$/JavaTutorial/JavaTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/PythonTutorial/PythonTutorial.iml" filepath="$PROJECT_DIR$/PythonTutorial/PythonTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/ShellTutorial/ShellTutorial.iml" filepath="$PROJECT_DIR$/ShellTutorial/ShellTutorial.iml" />
