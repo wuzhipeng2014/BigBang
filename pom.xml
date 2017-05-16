@@ -25,6 +25,7 @@
         <gson.version>2.7</gson.version>
         <org.apache.version>3.4</org.apache.version>
         <spark.version>2.1.0</spark.version>
+        <spark.core.version>2.1.0</spark.core.version>
         <jodatime.version>2.9.3</jodatime.version>
         <openCsv.version>2.3</openCsv.version>
         <hive.hcatalog.version>2.0.0</hive.hcatalog.version>
@@ -54,20 +55,20 @@
             <!--spark-->
             <dependency>
                 <groupId>org.apache.spark</groupId>
-                <artifactId>spark-core_2.10</artifactId>
-                <version>${spark.version}</version>
+                <artifactId>spark-core_2.11</artifactId>
+                <version>${spark.core.version}</version>
             </dependency>
             <!--spark streaming-->
             <dependency>
                 <groupId>org.apache.spark</groupId>
-                <artifactId>spark-streaming_2.10</artifactId>
+                <artifactId>spark-streaming_2.11</artifactId>
                 <version>${spark.version}</version>
             </dependency>
             <!--spark streaming接收kafka数据依赖jar-->
             <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-clients</artifactId>
-                <version>${kafka.client.version}</version>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-streaming-kafka-0-8_2.11</artifactId>
+                <version>${spark.version}</version>
             </dependency>
 
             <!--hadoop-->
@@ -148,7 +149,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.10</artifactId>
+            <artifactId>spark-core_2.11</artifactId>
         </dependency>
     </dependencies>
 

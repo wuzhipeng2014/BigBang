@@ -22,8 +22,10 @@ import java.util.Iterator;
 public class WordCountTest  {
     public static void main(String[] args) {
 
+        //local[n] 其中n指定了程序运行启动的线程的个数,此处n的值要大于接收线程的个数,多余的线程可用于对接收到的数据进行处理
         SparkConf sparkConf=new SparkConf().setMaster("local[2]").setAppName("SparkWordCountTest");
         JavaStreamingContext javaStreamingContext = new JavaStreamingContext(sparkConf, Durations.seconds(5));
+        //从netcat 服务器接收数据创建DStream
         JavaReceiverInputDStream<String> lines = javaStreamingContext.socketTextStream("localhost", 9999);
         JavaDStream<String> words = lines.flatMap(new FlatMapFunction<String, String>() {
             @Override

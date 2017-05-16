@@ -22,6 +22,7 @@ public class HelloSpark {
 
         SparkConf conf = new SparkConf().setMaster("local").setAppName("wordCount");
         JavaSparkContext sc = new JavaSparkContext(conf);
+        //从本地文件系统读取数据
         JavaRDD<String> stringJavaRDD = sc.textFile("/home/zhipengwu/secureCRT/derby.log");
 
         JavaRDD<String> derbys = stringJavaRDD.filter(new Function<String, Boolean>() {

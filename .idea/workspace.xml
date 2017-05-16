@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0ee5b0-1db8-4c28-875e-b4e683d0632d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SocketSparkStreaming.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/WordCountTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SparkStreamingBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SparkStreamingKafkaTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_10_2_6_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_2_10_0_8_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_10_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_10_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_10_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_10_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_tags_2_10_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_10_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_ast_2_10_3_2_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_core_2_10_3_2_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_jackson_2_10_3_2_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_10_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scalap_2_10_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_10_2_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BigBang.iml" afterPath="$PROJECT_DIR$/BigBang.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HadoopTutorial/HadoopTutorial.iml" afterPath="$PROJECT_DIR$/HadoopTutorial/HadoopTutorial.iml" />
@@ -12,6 +32,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ShellTutorial/ShellTutorial.iml" afterPath="$PROJECT_DIR$/ShellTutorial/ShellTutorial.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkTutorial/SparkTutorial.iml" afterPath="$PROJECT_DIR$/SparkTutorial/SparkTutorial.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkTutorial/pom.xml" afterPath="$PROJECT_DIR$/SparkTutorial/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/WordCountTest.java" afterPath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/WordCountTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/HelloSpark.java" afterPath="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/HelloSpark.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="BigBang.iws" />
@@ -43,13 +65,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="WordCountTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordCountTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/WordCountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkStreamingKafkaTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SparkStreamingKafkaTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="class#2222:2451" expanded="false" />
+                <element signature="method#call#0;class#2222:2451" expanded="false" />
+                <element signature="class#2509:2725" expanded="false" />
+                <element signature="method#call#0;class#2509:2725" expanded="false" />
+                <element signature="class#2803:3009" expanded="false" />
+                <element signature="method#call#0;class#2803:3009" expanded="false" />
+                <element signature="class#3027:3240" expanded="false" />
+                <element signature="method#call#0;class#3027:3240" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -96,7 +135,6 @@
         <option value="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/MRCommon/MRCommonModel.java" />
         <option value="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/other/UserBehaviorGidFilter.java" />
         <option value="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/test/UserBehaviorGidFilterTest.java" />
-        <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/HelloSpark.java" />
         <option value="$PROJECT_DIR$/JavaTutorial/pom.xml" />
         <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/AvgCount.java" />
         <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/AvgCountTest.java" />
@@ -116,9 +154,12 @@
         <option value="$PROJECT_DIR$/JavaTutorial/src/test/java/StringTokenizerTest.java" />
         <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/SimpleApp.java" />
         <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SocketSparkStreaming.java" />
+        <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/HelloSpark.java" />
         <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/WordCountTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SparkStreamingBasic.java" />
         <option value="$PROJECT_DIR$/SparkTutorial/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SparkStreamingKafkaTest.java" />
       </list>
     </option>
   </component>
@@ -169,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,12 +246,13 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spark" />
     <property name="SearchEverywhereHistoryKey" value="OperationResult&#9;PSI&#9;JAVA://com.qunar.mobile.innovation.search.data.OperationResult&#10;TrainOrderFilter&#9;PSI&#9;JAVA://com.qunar.other.TrainOrderFilter&#10;UserBehaviorFilter&#9;FILE&#9;file:///home/zhipengwu/Innovation/BigBang/HadoopTutorial/src/main/java/com/qunar/UserBehaviorFilter/UserBehaviorFilter.java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -233,7 +274,7 @@
       <recent name="$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WordCountTest">
+  <component name="RunManager" selected="Application.SparkStreamingKafkaTest">
     <configuration default="false" name="SimpleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -252,32 +293,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="SparkTutorial" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="com.qunar.test in HadoopTutorial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qunar.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="HadoopTutorial" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qunar.test" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="CommonTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -335,6 +350,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.qunar.sparkStreaming.SocketSparkStreaming" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SparkTutorial" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SparkStreamingKafkaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qunar.sparkStreaming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.qunar.sparkStreaming.SparkStreamingKafkaTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1013,18 +1048,18 @@
       <item index="0" class="java.lang.String" itemvalue="Bash.fun.sh" />
       <item index="1" class="java.lang.String" itemvalue="Application.WordCountTest" />
       <item index="2" class="java.lang.String" itemvalue="Application.SimpleApp" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.com.qunar.test in HadoopTutorial" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CommonTest.test" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.StringTokenizerTest.testString" />
-      <item index="6" class="java.lang.String" itemvalue="Application.SocketSparkStreaming" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CommonTest.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StringTokenizerTest.testString" />
+      <item index="5" class="java.lang.String" itemvalue="Application.SocketSparkStreaming" />
+      <item index="6" class="java.lang.String" itemvalue="Application.SparkStreamingKafkaTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SocketSparkStreaming" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SimpleApp" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StringTokenizerTest.testString" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CommonTest.test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.com.qunar.test in HadoopTutorial" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SparkStreamingKafkaTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SocketSparkStreaming" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SimpleApp" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StringTokenizerTest.testString" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CommonTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -1074,7 +1109,9 @@
       <workItem from="1494301558001" duration="3887000" />
       <workItem from="1494315825551" duration="44000" />
       <workItem from="1494322621570" duration="4443000" />
-      <workItem from="1494398677356" duration="2167000" />
+      <workItem from="1494398677356" duration="12026000" />
+      <workItem from="1494490266291" duration="1285000" />
+      <workItem from="1494851235417" duration="6962000" />
     </task>
     <servers />
   </component>
@@ -1111,7 +1148,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149405000" />
+    <option name="totallyTimeSpent" value="167511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
@@ -1124,15 +1161,16 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20250285" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.50251615" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20220385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5085324" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36584023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52673495" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5870307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49032992" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1630854" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16639118" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914376" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35381114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1149,7 +1187,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3444206" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51194537" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1192,48 +1229,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonTutorial/gettingStarted/ClassInherit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/guavaExercise/PreconditionExercise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/work/VacationClickDebug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaTutorial/src/main/java/com/qunar/commonutil/TimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/AbnormalPOI/AbnormalPOI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -1500,17 +1495,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/HelloSpark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HadoopTutorial/src/main/java/com/qunar/MRCommon/MRCommonModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/SimpleApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="96" selection-start-line="13" selection-start-column="96" selection-end-line="13" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/HelloSpark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1520,44 +1522,1062 @@
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="method#main#0;class#SocketSparkStreaming#0" expanded="false" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/test/SimpleApp.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0-sources.jar!/org/apache/hadoop/mapreduce/lib/input/TextInputFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="96" selection-start-line="13" selection-start-column="96" selection-end-line="13" selection-end-column="96" />
+        <state relative-caret-position="286">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.10/2.1.0/spark-core_2.10-2.1.0.jar!/org/apache/spark/input/StreamInputFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.10/2.1.0/spark-streaming_2.10-2.1.0.jar!/org/apache/spark/streaming/api/java/JavaStreamingContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SparkStreamingBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkTutorial/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/WordCountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/BigBang:SparkTutorial:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>BigBang:SparkTutorial:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="0.0" y="5531.9408932620645">BigBang:SparkTutorial:1.0-SNAPSHOT</node>
+            <node x="313.5" y="2253.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0</node>
+            <node x="685.5" y="47.46549643666822">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7</node>
+            <node x="1147.5" y="0.0">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7/org.apache.avro:avro-ipc:jar:1.7.7</node>
+            <node x="1116.0" y="84.0">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7/org.apache.avro:avro-ipc:jar:tests:1.7.7</node>
+            <node x="730.5" y="168.0">org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0</node>
+            <node x="1134.0" y="168.0">org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3</node>
+            <node x="1573.5" y="126.0">org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3/com.esotericsoftware:minlog:jar:1.3.0</node>
+            <node x="1560.0" y="210.0">org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3/org.objenesis:objenesis:jar:2.1</node>
+            <node x="730.5" y="305.2267290249433">org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill-java:jar:0.8.0</node>
+            <node x="699.0" y="389.2267290249433">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.xbean:xbean-asm5-shaded:jar:4.4</node>
+            <node x="717.0" y="473.2267290249433">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0</node>
+            <node x="1134.0" y="321.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.2.0</node>
+            <node x="1062.0" y="405.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0</node>
+            <node x="1465.5" y="363.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0</node>
+            <node x="1900.5" y="321.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0</node>
+            <node x="2223.0" y="321.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0</node>
+            <node x="2397.0" y="279.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0/javax.inject:javax.inject:jar:1</node>
+            <node x="2401.5" y="363.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0/aopalliance:aopalliance:jar:1.0</node>
+            <node x="1869.0" y="405.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-server-common:jar:2.2.0</node>
+            <node x="1461.0" y="447.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.2.0</node>
+            <node x="1116.0" y="489.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-yarn-api:jar:2.2.0</node>
+            <node x="1057.5" y="573.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0</node>
+            <node x="1519.5" y="573.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0/org.apache.hadoop:hadoop-yarn-common:jar:2.2.0</node>
+            <node x="1035.0" y="657.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.2.0</node>
+            <node x="690.0" y="630.1104794298658">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-launcher_2.11:jar:2.1.0</node>
+            <node x="663.0" y="783.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0</node>
+            <node x="1120.5" y="741.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0/org.fusesource.leveldbjni:leveldbjni-all:jar:1.8</node>
+            <node x="1098.0" y="825.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0/com.fasterxml.jackson.core:jackson-annotations:jar:2.6.5</node>
+            <node x="658.5" y="867.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-shuffle_2.11:jar:2.1.0</node>
+            <node x="699.0" y="951.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-unsafe_2.11:jar:2.1.0</node>
+            <node x="748.5" y="1035.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/net.java.dev.jets3t:jets3t:jar:0.7.1</node>
+            <node x="708.0" y="1119.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0</node>
+            <node x="1107.0" y="1119.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0/org.apache.curator:curator-framework:jar:2.4.0</node>
+            <node x="1537.5" y="1119.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0/org.apache.curator:curator-framework:jar:2.4.0/org.apache.curator:curator-client:jar:2.4.0</node>
+            <node x="699.0" y="1203.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="717.0" y="1287.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.commons:commons-lang3:jar:3.4</node>
+            <node x="717.0" y="1371.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.commons:commons-math3:jar:3.4.1</node>
+            <node x="748.5" y="1455.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/com.google.code.findbugs:jsr305:jar:1.3.9</node>
+            <node x="735.0" y="1539.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:slf4j-api:jar:1.7.16</node>
+            <node x="721.5" y="1623.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:jul-to-slf4j:jar:1.7.16</node>
+            <node x="712.5" y="1707.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:jcl-over-slf4j:jar:1.7.16</node>
+            <node x="753.0" y="1791.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/log4j:log4j:jar:1.2.17</node>
+            <node x="717.0" y="1875.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:slf4j-log4j12:jar:1.7.16</node>
+            <node x="721.5" y="1959.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/com.ning:compress-lzf:jar:1.0.3</node>
+            <node x="726.0" y="2043.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.xerial.snappy:snappy-java:jar:1.1.2.6</node>
+            <node x="762.0" y="2127.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/net.jpountz.lz4:lz4:jar:1.3.0</node>
+            <node x="717.0" y="2211.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.roaringbitmap:RoaringBitmap:jar:0.5.11</node>
+            <node x="726.0" y="2295.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/commons-net:commons-net:jar:2.2</node>
+            <node x="717.0" y="2379.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.scala-lang:scala-library:jar:2.11.8</node>
+            <node x="690.0" y="2463.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11</node>
+            <node x="1111.5" y="2463.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11</node>
+            <node x="1533.0" y="2421.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11/org.json4s:json4s-ast_2.11:jar:3.2.11</node>
+            <node x="1573.5" y="2505.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11/org.scala-lang:scalap:jar:2.11.0</node>
+            <node x="1918.5" y="2505.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11/org.scala-lang:scalap:jar:2.11.0/org.scala-lang:scala-compiler:jar:2.11.0</node>
+            <node x="717.0" y="2673.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2</node>
+            <node x="1116.0" y="2547.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/javax.ws.rs:javax.ws.rs-api:jar:2.0.1</node>
+            <node x="1152.0" y="2631.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34</node>
+            <node x="1560.0" y="2589.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34/org.glassfish.hk2:hk2-utils:jar:2.4.0-b34</node>
+            <node x="1501.5" y="2673.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34/org.glassfish.hk2.external:aopalliance-repackaged:jar:2.4.0-b34</node>
+            <node x="1129.5" y="2715.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2.external:javax.inject:jar:2.4.0-b34</node>
+            <node x="1134.0" y="2799.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-locator:jar:2.4.0-b34</node>
+            <node x="1560.0" y="2799.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-locator:jar:2.4.0-b34/org.javassist:javassist:jar:3.18.1-GA</node>
+            <node x="717.0" y="2951.226729024944">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2</node>
+            <node x="1093.5" y="2883.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2/javax.annotation:javax.annotation-api:jar:1.2</node>
+            <node x="1129.5" y="2967.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2/org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.22.2</node>
+            <node x="1089.0" y="3051.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2/org.glassfish.hk2:osgi-resource-locator:jar:1.0.1</node>
+            <node x="717.0" y="3177.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2</node>
+            <node x="1107.0" y="3135.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2/org.glassfish.jersey.media:jersey-media-jaxb:jar:2.22.2</node>
+            <node x="1120.5" y="3219.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2/javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="667.5" y="3261.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.containers:jersey-container-servlet:jar:2.22.2</node>
+            <node x="645.0" y="3345.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.22.2</node>
+            <node x="735.0" y="3429.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/io.netty:netty-all:jar:4.0.42.Final</node>
+            <node x="753.0" y="3513.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/io.netty:netty:jar:3.8.0.Final</node>
+            <node x="748.5" y="3597.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/com.clearspring.analytics:stream:jar:2.7.0</node>
+            <node x="721.5" y="3681.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-core:jar:3.1.2</node>
+            <node x="726.0" y="3765.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-jvm:jar:3.1.2</node>
+            <node x="721.5" y="3849.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-json:jar:3.1.2</node>
+            <node x="703.5" y="3933.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-graphite:jar:3.1.2</node>
+            <node x="703.5" y="4017.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.6.5</node>
+            <node x="1129.5" y="4017.5837504049223">org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.6.5/com.fasterxml.jackson.core:jackson-core:jar:2.6.5</node>
+            <node x="663.0" y="4129.344982993198">org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5</node>
+            <node x="1125.0" y="4101.583750404922">org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5/org.scala-lang:scala-reflect:jar:2.11.7</node>
+            <node x="1075.5" y="4185.583750404922">org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5/com.fasterxml.jackson.module:jackson-module-paranamer:jar:2.6.5</node>
+            <node x="762.0" y="4213.344982993198">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.ivy:ivy:jar:2.4.0</node>
+            <node x="762.0" y="4297.344982993198">org.apache.spark:spark-core_2.11:jar:2.1.0/oro:oro:jar:2.0.8</node>
+            <node x="739.5" y="4381.344982993198">org.apache.spark:spark-core_2.11:jar:2.1.0/net.razorvine:pyrolite:jar:4.13</node>
+            <node x="757.5" y="4465.344982993198">org.apache.spark:spark-core_2.11:jar:2.1.0/net.sf.py4j:py4j:jar:0.10.4</node>
+            <node x="708.0" y="4549.344982993198">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-tags_2.11:jar:2.1.0</node>
+            <node x="1120.5" y="4549.344982993198">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-tags_2.11:jar:2.1.0/org.scalatest:scalatest_2.11:jar:2.2.6</node>
+            <node x="712.5" y="4653.2">org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.commons:commons-crypto:jar:1.0.0</node>
+            <node x="748.5" y="4737.2">org.apache.spark:spark-core_2.11:jar:2.1.0/org.spark-project.spark:unused:jar:1.0.0</node>
+            <node x="291.0" y="3544.8129170715893">org.apache.spark:spark-streaming_2.11:jar:2.1.0</node>
+            <node x="246.0" y="4821.2">org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0</node>
+            <node x="730.5" y="4821.2">org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1</node>
+            <node x="1120.5" y="4647.583750404922">org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/org.scala-lang.modules:scala-xml_2.11:jar:1.0.2</node>
+            <node x="1129.5" y="4731.583750404922">org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/com.yammer.metrics:metrics-core:jar:2.2.0</node>
+            <node x="1053.0" y="4815.583750404922">org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/org.scala-lang.modules:scala-parser-combinators_2.11:jar:1.0.2</node>
+            <node x="1147.5" y="4899.583750404922">org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/com.101tec:zkclient:jar:0.3</node>
+            <node x="1125.0" y="4983.583750404922">org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/org.apache.kafka:kafka-clients:jar:0.8.2.1</node>
+            <node x="358.5" y="5537.557142857143">com.google.guava:guava:jar:19.0</node>
+            <node x="349.5" y="5621.557142857143">net.sf.opencsv:opencsv:jar:2.3</node>
+            <node x="322.5" y="6327.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0</node>
+            <node x="694.5" y="5067.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.hadoop:hadoop-annotations:jar:2.2.0</node>
+            <node x="1143.0" y="5067.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.hadoop:hadoop-annotations:jar:2.2.0/jdk.tools:jdk.tools:jar:1.6</node>
+            <node x="726.0" y="5151.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-cli:commons-cli:jar:1.2</node>
+            <node x="721.5" y="5235.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.commons:commons-math:jar:2.1</node>
+            <node x="748.5" y="5319.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/xmlenc:xmlenc:jar:0.52</node>
+            <node x="694.5" y="5403.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-httpclient:commons-httpclient:jar:3.1</node>
+            <node x="717.0" y="5487.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-codec:commons-codec:jar:1.4</node>
+            <node x="730.5" y="5571.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-io:commons-io:jar:2.1</node>
+            <node x="726.0" y="5655.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/javax.servlet:servlet-api:jar:2.5</node>
+            <node x="753.0" y="5739.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.mortbay.jetty:jetty:jar:6.1.26</node>
+            <node x="730.5" y="5823.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.mortbay.jetty:jetty-util:jar:6.1.26</node>
+            <node x="726.0" y="5907.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-core:jar:1.9</node>
+            <node x="726.0" y="5991.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9</node>
+            <node x="1147.5" y="5790.465496436669">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jettison:jettison:jar:1.1</node>
+            <node x="1564.5" y="5790.465496436669">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jettison:jettison:jar:1.1/stax:stax-api:jar:1.0.1</node>
+            <node x="1143.0" y="5949.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1</node>
+            <node x="1564.5" y="5949.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2</node>
+            <node x="1936.5" y="5949.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2/javax.activation:activation:jar:1.1</node>
+            <node x="1125.0" y="6033.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jackson:jackson-jaxrs:jar:1.8.3</node>
+            <node x="1138.5" y="6117.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jackson:jackson-xc:jar:1.8.3</node>
+            <node x="717.0" y="6201.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-server:jar:1.9</node>
+            <node x="1170.0" y="6201.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-server:jar:1.9/asm:asm:jar:3.1</node>
+            <node x="708.0" y="6285.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/tomcat:jasper-compiler:jar:5.5.23</node>
+            <node x="712.5" y="6369.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/tomcat:jasper-runtime:jar:5.5.23</node>
+            <node x="744.0" y="6453.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/javax.servlet.jsp:jsp-api:jar:2.1</node>
+            <node x="730.5" y="6537.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-el:commons-el:jar:1.0</node>
+            <node x="708.0" y="6621.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="721.5" y="6705.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-lang:commons-lang:jar:2.5</node>
+            <node x="681.0" y="6789.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6</node>
+            <node x="1098.0" y="6595.798829770002">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-collections:commons-collections:jar:3.2.1</node>
+            <node x="1111.5" y="6789.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8</node>
+            <node x="1524.0" y="6789.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8/commons-beanutils:commons-beanutils:jar:1.7.0</node>
+            <node x="1084.5" y="6915.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-beanutils:commons-beanutils-core:jar:1.8.0</node>
+            <node x="703.5" y="6873.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.codehaus.jackson:jackson-core-asl:jar:1.8.8</node>
+            <node x="694.5" y="6957.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8</node>
+            <node x="757.5" y="7041.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.avro:avro:jar:1.7.4</node>
+            <node x="1143.0" y="7041.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.avro:avro:jar:1.7.4/com.thoughtworks.paranamer:paranamer:jar:2.3</node>
+            <node x="717.0" y="7125.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.google.protobuf:protobuf-java:jar:2.5.0</node>
+            <node x="726.0" y="7209.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.hadoop:hadoop-auth:jar:2.2.0</node>
+            <node x="757.5" y="7293.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/com.jcraft:jsch:jar:0.1.42</node>
+            <node x="735.0" y="7377.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="703.5" y="7461.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.commons:commons-compress:jar:1.4.1</node>
+            <node x="1174.5" y="7461.583750404922">org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.commons:commons-compress:jar:1.4.1/org.tukaani:xz:jar:1.0</node>
+            <node x="313.5" y="6411.583750404922">org.apache.spark:spark-core_2.10:jar:unknown</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="BigBang:SparkTutorial:1.0-SNAPSHOT" target="com.google.guava:guava:jar:19.0">
+              <point x="83.0" y="-0.0" />
+              <point x="246.0" y="5559.557142857143" />
+              <point x="-47.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.xerial.snappy:snappy-java:jar:1.1.2.6">
+              <point x="92.0" y="-2.291666666666515" />
+              <point x="565.0" y="2273.2920837382553" />
+              <point x="645.0" y="2065.5837504049223" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-yarn-api:jar:2.2.0">
+              <point x="83.0" y="-0.0" />
+              <point x="955.0" y="495.2267290249433" />
+              <point x="1035.0" y="511.5837504049223" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.mortbay.jetty:jetty-util:jar:6.1.26">
+              <point x="83.0" y="-7.0714285714284415" />
+              <point x="565.0" y="6342.512321833494" />
+              <point x="645.0" y="5845.583750404922" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.hadoop:hadoop-annotations:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.hadoop:hadoop-annotations:jar:2.2.0/jdk.tools:jdk.tools:jar:1.6">
+              <point x="105.5" y="-0.0" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/io.netty:netty-all:jar:4.0.42.Final">
+              <point x="92.0" y="7.791666666666515" />
+              <point x="565.0" y="2283.3754170715883" />
+              <point x="645.0" y="3451.5837504049223" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:slf4j-log4j12:jar:1.7.16">
+              <point x="92.0" y="-4.125" />
+              <point x="565.0" y="2271.4587504049223" />
+              <point x="645.0" y="1897.5837504049223" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.hadoop:hadoop-annotations:jar:2.2.0">
+              <point x="83.0" y="-21.214285714285325" />
+              <point x="565.0" y="6328.369464690637" />
+              <point x="645.0" y="5089.583750404922" />
+              <point x="-105.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jettison:jettison:jar:1.1" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jettison:jettison:jar:1.1/stax:stax-api:jar:1.0.1">
+              <point x="60.5" y="-0.0" />
+              <point x="-60.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-el:commons-el:jar:1.0">
+              <point x="83.0" y="3.9285714285715585" />
+              <point x="565.0" y="6353.512321833494" />
+              <point x="645.0" y="6559.583750404922" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:jul-to-slf4j:jar:1.7.16">
+              <point x="92.0" y="-6.875" />
+              <point x="565.0" y="2268.7087504049223" />
+              <point x="645.0" y="1645.5837504049223" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2/org.glassfish.hk2:osgi-resource-locator:jar:1.0.1">
+              <point x="83.0" y="14.666666666666515" />
+              <point x="955.0" y="2987.8933956916103" />
+              <point x="1035.0" y="3073.5837504049223" />
+              <point x="-119.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.commons:commons-lang3:jar:3.4">
+              <point x="92.0" y="-10.541666666666515" />
+              <point x="565.0" y="2265.0420837382553" />
+              <point x="645.0" y="1309.5837504049223" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-core:jar:3.1.2">
+              <point x="92.0" y="10.541666666666515" />
+              <point x="565.0" y="2286.1254170715883" />
+              <point x="645.0" y="3703.5837504049223" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/javax.servlet.jsp:jsp-api:jar:2.1">
+              <point x="83.0" y="2.357142857143117" />
+              <point x="565.0" y="6351.940893262065" />
+              <point x="645.0" y="6475.583750404922" />
+              <point x="-56.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34/org.glassfish.hk2:hk2-utils:jar:2.4.0-b34">
+              <point x="56.0" y="-11.0" />
+              <point x="1381.0" y="2642.5837504049223" />
+              <point x="1461.0" y="2611.5837504049223" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.22.2">
+              <point x="92.0" y="6.875" />
+              <point x="565.0" y="2282.4587504049223" />
+              <point x="-155.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-shuffle_2.11:jar:2.1.0">
+              <point x="92.0" y="-15.125" />
+              <point x="565.0" y="2260.4587504049223" />
+              <point x="645.0" y="889.5837504049223" />
+              <point x="-141.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-jvm:jar:3.1.2">
+              <point x="92.0" y="11.458333333333485" />
+              <point x="565.0" y="2287.0420837382553" />
+              <point x="645.0" y="3787.5837504049223" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2/org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.22.2">
+              <point x="83.0" y="-0.0" />
+              <point x="955.0" y="2973.226729024944" />
+              <point x="1035.0" y="2989.5837504049223" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34">
+              <point x="83.0" y="-5.5" />
+              <point x="955.0" y="2690.0837504049223" />
+              <point x="1035.0" y="2653.5837504049223" />
+              <point x="-56.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0">
+              <point x="146.0" y="-11.0" />
+              <point x="1381.0" y="416.5837504049223" />
+              <point x="-159.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.roaringbitmap:RoaringBitmap:jar:0.5.11">
+              <point x="92.0" y="-0.4583333333334849" />
+              <point x="565.0" y="2275.1254170715883" />
+              <point x="645.0" y="2233.5837504049223" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-unsafe_2.11:jar:2.1.0">
+              <point x="92.0" y="-14.208333333333485" />
+              <point x="565.0" y="2261.3754170715883" />
+              <point x="645.0" y="973.5837504049223" />
+              <point x="-101.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/net.java.dev.jets3t:jets3t:jar:0.7.1">
+              <point x="92.0" y="-13.291666666666515" />
+              <point x="565.0" y="2262.2920837382553" />
+              <point x="645.0" y="1057.5837504049223" />
+              <point x="-51.5" y="-0.0" />
+            </edge>
+            <edge source="BigBang:SparkTutorial:1.0-SNAPSHOT" target="org.apache.spark:spark-streaming_2.11:jar:2.1.0">
+              <point x="83.0" y="-12.571428571428442" />
+              <point x="246.0" y="3566.8129170715893" />
+              <point x="-114.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1" target="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/org.scala-lang.modules:scala-parser-combinators_2.11:jar:1.0.2">
+              <point x="69.5" y="-0.0" />
+              <point x="955.0" y="4843.2" />
+              <point x="1035.0" y="4837.583750404922" />
+              <point x="-155.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.commons:commons-compress:jar:1.4.1" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.commons:commons-compress:jar:1.4.1/org.tukaani:xz:jar:1.0">
+              <point x="96.5" y="-0.0" />
+              <point x="-33.5" y="-0.0" />
+            </edge>
+            <edge source="BigBang:SparkTutorial:1.0-SNAPSHOT" target="org.apache.hadoop:hadoop-common:jar:2.2.0">
+              <point x="83.0" y="12.571428571428442" />
+              <point x="246.0" y="6349.583750404922" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.containers:jersey-container-servlet:jar:2.22.2">
+              <point x="92.0" y="5.958333333333485" />
+              <point x="565.0" y="2281.5420837382553" />
+              <point x="645.0" y="3283.5837504049223" />
+              <point x="-132.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2/javax.validation:validation-api:jar:1.1.0.Final">
+              <point x="83.0" y="11.0" />
+              <point x="955.0" y="3210.5837504049223" />
+              <point x="1035.0" y="3241.5837504049223" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jettison:jettison:jar:1.1">
+              <point x="74.0" y="-16.5" />
+              <point x="955.0" y="5997.083750404922" />
+              <point x="1035.0" y="5812.465496436669" />
+              <point x="-60.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1" target="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/com.101tec:zkclient:jar:0.3">
+              <point x="69.5" y="8.800000000000182" />
+              <point x="955.0" y="4852.0" />
+              <point x="1035.0" y="4921.583750404922" />
+              <point x="-60.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11">
+              <point x="92.0" y="2.291666666666515" />
+              <point x="565.0" y="2277.8754170715883" />
+              <point x="645.0" y="2485.5837504049223" />
+              <point x="-110.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2">
+              <point x="92.0" y="4.125" />
+              <point x="565.0" y="2279.7087504049223" />
+              <point x="645.0" y="2973.226729024944" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0">
+              <point x="105.5" y="-0.0" />
+              <point x="-47.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/tomcat:jasper-runtime:jar:5.5.23">
+              <point x="83.0" y="0.7857142857146755" />
+              <point x="565.0" y="6350.369464690637" />
+              <point x="645.0" y="6391.583750404922" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-lang:commons-lang:jar:2.5">
+              <point x="83.0" y="7.0714285714284415" />
+              <point x="565.0" y="6356.655178976351" />
+              <point x="645.0" y="6727.583750404922" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.mortbay.jetty:jetty:jar:6.1.26">
+              <point x="83.0" y="-8.642857142856883" />
+              <point x="565.0" y="6340.940893262065" />
+              <point x="645.0" y="5761.583750404922" />
+              <point x="-47.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6">
+              <point x="83.0" y="8.642857142856883" />
+              <point x="565.0" y="6358.226607547779" />
+              <point x="645.0" y="6811.583750404922" />
+              <point x="-119.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.xbean:xbean-asm5-shaded:jar:4.4">
+              <point x="92.0" y="-18.791666666666515" />
+              <point x="565.0" y="2256.7920837382553" />
+              <point x="645.0" y="411.2267290249433" />
+              <point x="-101.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/net.razorvine:pyrolite:jar:4.13">
+              <point x="92.0" y="17.875" />
+              <point x="565.0" y="2293.4587504049223" />
+              <point x="645.0" y="4403.344982993198" />
+              <point x="-60.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/javax.servlet:javax.servlet-api:jar:3.1.0">
+              <point x="92.0" y="-11.458333333333485" />
+              <point x="565.0" y="2264.1254170715883" />
+              <point x="645.0" y="1225.5837504049223" />
+              <point x="-101.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2">
+              <point x="92.0" y="3.208333333333485" />
+              <point x="565.0" y="2278.7920837382553" />
+              <point x="645.0" y="2695.5837504049223" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0">
+              <point x="92.0" y="-12.375" />
+              <point x="565.0" y="2263.2087504049223" />
+              <point x="645.0" y="1141.5837504049223" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8">
+              <point x="83.0" y="11.785714285714675" />
+              <point x="565.0" y="6361.369464690637" />
+              <point x="645.0" y="6979.583750404922" />
+              <point x="-105.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.2.0">
+              <point x="146.0" y="11.0" />
+              <point x="1381.0" y="438.5837504049223" />
+              <point x="-164.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0/aopalliance:aopalliance:jar:1.0">
+              <point x="47.0" y="11.0" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5/org.scala-lang:scala-reflect:jar:2.11.7">
+              <point x="137.0" y="-11.0" />
+              <point x="955.0" y="4140.344982993198" />
+              <point x="1035.0" y="4123.583750404922" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-cli:commons-cli:jar:1.2">
+              <point x="83.0" y="-19.642857142856883" />
+              <point x="565.0" y="6329.940893262065" />
+              <point x="645.0" y="5173.583750404922" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="BigBang:SparkTutorial:1.0-SNAPSHOT" target="org.apache.spark:spark-core_2.10:jar:unknown">
+              <point x="83.0" y="18.857142857143117" />
+              <point x="246.0" y="6433.583750404922" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-locator:jar:2.4.0-b34">
+              <point x="83.0" y="16.5" />
+              <point x="955.0" y="2712.0837504049223" />
+              <point x="1035.0" y="2821.5837504049223" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="BigBang:SparkTutorial:1.0-SNAPSHOT" target="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0">
+              <point x="83.0" y="-6.2857142857146755" />
+              <point x="-159.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-httpclient:commons-httpclient:jar:3.1">
+              <point x="83.0" y="-14.928571428571558" />
+              <point x="565.0" y="6334.655178976351" />
+              <point x="645.0" y="5425.583750404922" />
+              <point x="-105.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.ivy:ivy:jar:2.4.0">
+              <point x="92.0" y="16.041666666666515" />
+              <point x="565.0" y="2291.6254170715883" />
+              <point x="645.0" y="4235.344982993198" />
+              <point x="-38.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11/org.scala-lang:scalap:jar:2.11.0">
+              <point x="96.5" y="11.0" />
+              <point x="1381.0" y="2496.5837504049223" />
+              <point x="1461.0" y="2527.5837504049223" />
+              <point x="-51.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11">
+              <point x="110.0" y="-0.0" />
+              <point x="-96.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-io:commons-io:jar:2.1">
+              <point x="83.0" y="-11.785714285714675" />
+              <point x="565.0" y="6337.798036119208" />
+              <point x="645.0" y="5593.583750404922" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2/javax.activation:activation:jar:1.1">
+              <point x="60.5" y="-0.0" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0">
+              <point x="92.0" y="-16.041666666666515" />
+              <point x="565.0" y="2259.5420837382553" />
+              <point x="645.0" y="805.5837504049223" />
+              <point x="-137.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.google.protobuf:protobuf-java:jar:2.5.0">
+              <point x="83.0" y="14.928571428571558" />
+              <point x="565.0" y="6364.512321833494" />
+              <point x="645.0" y="7147.583750404922" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0">
+              <point x="159.5" y="-11.0" />
+              <point x="1869.0" y="343.5837504049223" />
+              <point x="-105.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0">
+              <point x="92.0" y="-20.625" />
+              <point x="565.0" y="2254.9587504049223" />
+              <point x="645.0" y="190.0" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="BigBang:SparkTutorial:1.0-SNAPSHOT" target="org.apache.spark:spark-core_2.11:jar:2.1.0">
+              <point x="83.0" y="-18.857142857143117" />
+              <point x="246.0" y="2275.5837504049223" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/net.jpountz.lz4:lz4:jar:1.3.0">
+              <point x="92.0" y="-1.375" />
+              <point x="565.0" y="2274.2087504049223" />
+              <point x="645.0" y="2149.5837504049223" />
+              <point x="-38.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.scala-lang:scala-library:jar:2.11.8">
+              <point x="92.0" y="1.375" />
+              <point x="565.0" y="2276.9587504049223" />
+              <point x="645.0" y="2401.5837504049223" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-tags_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-tags_2.11:jar:2.1.0/org.scalatest:scalatest_2.11:jar:2.2.6">
+              <point x="92.0" y="-0.0" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7">
+              <point x="92.0" y="-21.541666666666515" />
+              <point x="565.0" y="2254.0420837382553" />
+              <point x="645.0" y="69.46549643666822" />
+              <point x="-114.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8">
+              <point x="119.0" y="-0.0" />
+              <point x="-96.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0/com.fasterxml.jackson.core:jackson-annotations:jar:2.6.5">
+              <point x="137.0" y="11.0" />
+              <point x="955.0" y="816.5837504049223" />
+              <point x="1035.0" y="847.5837504049223" />
+              <point x="-110.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1" target="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/org.scala-lang.modules:scala-xml_2.11:jar:1.0.2">
+              <point x="69.5" y="-17.600000000000364" />
+              <point x="955.0" y="4825.599999999999" />
+              <point x="1035.0" y="4669.583750404922" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.6.5">
+              <point x="92.0" y="14.208333333333485" />
+              <point x="565.0" y="2289.7920837382553" />
+              <point x="645.0" y="4039.5837504049223" />
+              <point x="-96.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.avro:avro:jar:1.7.4">
+              <point x="83.0" y="13.357142857143117" />
+              <point x="565.0" y="6362.940893262065" />
+              <point x="645.0" y="7063.583750404922" />
+              <point x="-42.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-json:jar:3.1.2">
+              <point x="92.0" y="12.375" />
+              <point x="565.0" y="2287.9587504049223" />
+              <point x="645.0" y="3871.5837504049223" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0" target="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1">
+              <point x="159.5" y="-0.0" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9">
+              <point x="83.0" y="-3.9285714285715585" />
+              <point x="565.0" y="6345.655178976351" />
+              <point x="645.0" y="6013.583750404922" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-server:jar:1.9">
+              <point x="83.0" y="-2.357142857143117" />
+              <point x="565.0" y="6347.226607547779" />
+              <point x="645.0" y="6223.583750404922" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.jcraft:jsch:jar:0.1.42">
+              <point x="83.0" y="18.07142857142844" />
+              <point x="565.0" y="6367.655178976351" />
+              <point x="645.0" y="7315.583750404922" />
+              <point x="-42.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0">
+              <point x="83.0" y="-8.800000000000011" />
+              <point x="955.0" y="486.42672902494314" />
+              <point x="1035.0" y="427.5837504049223" />
+              <point x="-146.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.codehaus.jackson:jackson-core-asl:jar:1.8.8">
+              <point x="83.0" y="10.214285714285325" />
+              <point x="565.0" y="6359.798036119208" />
+              <point x="645.0" y="6895.583750404922" />
+              <point x="-96.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/commons-net:commons-net:jar:2.2">
+              <point x="92.0" y="0.4583333333334849" />
+              <point x="565.0" y="2276.0420837382553" />
+              <point x="645.0" y="2317.5837504049223" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="BigBang:SparkTutorial:1.0-SNAPSHOT" target="net.sf.opencsv:opencsv:jar:2.3">
+              <point x="83.0" y="6.2857142857146755" />
+              <point x="246.0" y="5643.557142857143" />
+              <point x="-56.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill-java:jar:0.8.0">
+              <point x="92.0" y="-19.708333333333485" />
+              <point x="565.0" y="2255.8754170715883" />
+              <point x="645.0" y="327.2267290249433" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7/org.apache.avro:avro-ipc:jar:1.7.7">
+              <point x="114.5" y="-11.0" />
+              <point x="955.0" y="58.46549643666822" />
+              <point x="1035.0" y="22.0" />
+              <point x="-60.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/tomcat:jasper-compiler:jar:5.5.23">
+              <point x="83.0" y="-0.7857142857146755" />
+              <point x="565.0" y="6348.798036119208" />
+              <point x="645.0" y="6307.583750404922" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-tags_2.11:jar:2.1.0">
+              <point x="92.0" y="19.708333333333485" />
+              <point x="565.0" y="2295.2920837382553" />
+              <point x="645.0" y="4571.344982993198" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/net.sf.py4j:py4j:jar:0.10.4">
+              <point x="92.0" y="18.791666666666515" />
+              <point x="565.0" y="2294.3754170715883" />
+              <point x="645.0" y="4487.344982993198" />
+              <point x="-42.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.clearspring.analytics:stream:jar:2.7.0">
+              <point x="92.0" y="9.625" />
+              <point x="565.0" y="2285.2087504049223" />
+              <point x="645.0" y="3619.5837504049223" />
+              <point x="-51.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2.external:javax.inject:jar:2.4.0-b34">
+              <point x="83.0" y="5.5" />
+              <point x="955.0" y="2701.0837504049223" />
+              <point x="1035.0" y="2737.5837504049223" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0">
+              <point x="92.0" y="-17.875" />
+              <point x="565.0" y="2257.7087504049223" />
+              <point x="645.0" y="495.2267290249433" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5">
+              <point x="92.0" y="15.125" />
+              <point x="565.0" y="2290.7087504049223" />
+              <point x="645.0" y="4151.344982993198" />
+              <point x="-137.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.avro:avro:jar:1.7.4" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.avro:avro:jar:1.7.4/com.thoughtworks.paranamer:paranamer:jar:2.3">
+              <point x="42.5" y="-0.0" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0">
+              <point x="83.0" y="8.800000000000011" />
+              <point x="955.0" y="504.0267290249435" />
+              <point x="1035.0" y="595.5837504049223" />
+              <point x="-150.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:slf4j-api:jar:1.7.16">
+              <point x="92.0" y="-7.791666666666515" />
+              <point x="565.0" y="2267.7920837382553" />
+              <point x="645.0" y="1561.5837504049223" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.6.5" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.6.5/com.fasterxml.jackson.core:jackson-core:jar:2.6.5">
+              <point x="96.5" y="-0.0" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-locator:jar:2.4.0-b34" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-locator:jar:2.4.0-b34/org.javassist:javassist:jar:3.18.1-GA">
+              <point x="74.0" y="-0.0" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2">
+              <point x="65.0" y="-0.0" />
+              <point x="-60.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-beanutils:commons-beanutils-core:jar:1.8.0">
+              <point x="119.0" y="14.66666666666697" />
+              <point x="955.0" y="6826.250417071589" />
+              <point x="1035.0" y="6937.583750404922" />
+              <point x="-123.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8/commons-beanutils:commons-beanutils:jar:1.7.0">
+              <point x="96.5" y="-0.0" />
+              <point x="-101.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/log4j:log4j:jar:1.2.17">
+              <point x="92.0" y="-5.041666666666515" />
+              <point x="565.0" y="2270.5420837382553" />
+              <point x="645.0" y="1813.5837504049223" />
+              <point x="-47.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jackson:jackson-xc:jar:1.8.3">
+              <point x="74.0" y="16.5" />
+              <point x="955.0" y="6030.083750404922" />
+              <point x="1035.0" y="6139.583750404922" />
+              <point x="-69.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1" target="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/com.yammer.metrics:metrics-core:jar:2.2.0">
+              <point x="69.5" y="-8.800000000000182" />
+              <point x="955.0" y="4834.4" />
+              <point x="1035.0" y="4753.583750404922" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3/com.esotericsoftware:minlog:jar:1.3.0">
+              <point x="74.0" y="-11.0" />
+              <point x="1381.0" y="179.0" />
+              <point x="1461.0" y="148.0" />
+              <point x="-51.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.google.code.findbugs:jsr305:jar:1.3.9">
+              <point x="92.0" y="-8.708333333333485" />
+              <point x="565.0" y="2266.8754170715883" />
+              <point x="645.0" y="1477.5837504049223" />
+              <point x="-51.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.2.0">
+              <point x="83.0" y="-17.600000000000023" />
+              <point x="955.0" y="477.6267290249434" />
+              <point x="1035.0" y="343.5837504049223" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.slf4j:jcl-over-slf4j:jar:1.7.16">
+              <point x="92.0" y="-5.958333333333485" />
+              <point x="565.0" y="2269.6254170715883" />
+              <point x="645.0" y="1729.5837504049223" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0/org.apache.curator:curator-framework:jar:2.4.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0/org.apache.curator:curator-framework:jar:2.4.0/org.apache.curator:curator-client:jar:2.4.0">
+              <point x="101.0" y="-0.0" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.avro:avro-mapred:jar:hadoop2:1.7.7/org.apache.avro:avro-ipc:jar:tests:1.7.7">
+              <point x="114.5" y="11.0" />
+              <point x="955.0" y="80.46549643666822" />
+              <point x="1035.0" y="106.0" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.fasterxml.jackson.module:jackson-module-scala_2.11:jar:2.6.5/com.fasterxml.jackson.module:jackson-module-paranamer:jar:2.6.5">
+              <point x="137.0" y="11.0" />
+              <point x="955.0" y="4162.344982993198" />
+              <point x="1035.0" y="4207.583750404922" />
+              <point x="-132.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/org.codehaus.jackson:jackson-jaxrs:jar:1.8.3">
+              <point x="74.0" y="5.5" />
+              <point x="955.0" y="6019.083750404922" />
+              <point x="1035.0" y="6055.583750404922" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-network-common_2.11:jar:2.1.0/org.fusesource.leveldbjni:leveldbjni-all:jar:1.8">
+              <point x="137.0" y="-11.0" />
+              <point x="955.0" y="794.5837504049223" />
+              <point x="1035.0" y="763.5837504049223" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2/org.glassfish.jersey.media:jersey-media-jaxb:jar:2.22.2">
+              <point x="83.0" y="-11.0" />
+              <point x="955.0" y="3188.5837504049223" />
+              <point x="1035.0" y="3157.5837504049223" />
+              <point x="-101.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0/org.apache.hadoop:hadoop-yarn-common:jar:2.2.0">
+              <point x="150.5" y="-0.0" />
+              <point x="-105.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/oro:oro:jar:2.0.8">
+              <point x="92.0" y="16.958333333333485" />
+              <point x="565.0" y="2292.5420837382553" />
+              <point x="645.0" y="4319.344982993198" />
+              <point x="-38.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-json:jar:1.9/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1">
+              <point x="74.0" y="-5.5" />
+              <point x="955.0" y="6008.083750404922" />
+              <point x="1035.0" y="5971.583750404922" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3">
+              <point x="69.5" y="-0.0" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/io.dropwizard.metrics:metrics-graphite:jar:3.1.2">
+              <point x="92.0" y="13.291666666666515" />
+              <point x="565.0" y="2288.8754170715883" />
+              <point x="645.0" y="3955.5837504049223" />
+              <point x="-96.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1" target="org.apache.spark:spark-streaming-kafka-0-8_2.11:jar:2.1.0/org.apache.kafka:kafka_2.11:jar:0.8.2.1/org.apache.kafka:kafka-clients:jar:0.8.2.1">
+              <point x="69.5" y="17.600000000000364" />
+              <point x="955.0" y="4860.8" />
+              <point x="1035.0" y="5005.583750404922" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-server-common:jar:2.2.0">
+              <point x="159.5" y="11.0" />
+              <point x="-137.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.spark-project.spark:unused:jar:1.0.0">
+              <point x="92.0" y="21.541666666666515" />
+              <point x="565.0" y="2297.1254170715883" />
+              <point x="645.0" y="4759.2" />
+              <point x="-51.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.commons:commons-math3:jar:3.4.1">
+              <point x="92.0" y="-9.625" />
+              <point x="565.0" y="2265.9587504049223" />
+              <point x="645.0" y="1393.5837504049223" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-core:jar:1.9">
+              <point x="83.0" y="-5.5" />
+              <point x="565.0" y="6344.083750404922" />
+              <point x="645.0" y="5929.583750404922" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-codec:commons-codec:jar:1.4">
+              <point x="83.0" y="-13.357142857143117" />
+              <point x="565.0" y="6336.226607547779" />
+              <point x="645.0" y="5509.583750404922" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.spark:spark-launcher_2.11:jar:2.1.0">
+              <point x="92.0" y="-16.958333333333485" />
+              <point x="565.0" y="2258.6254170715883" />
+              <point x="645.0" y="652.1104794298658" />
+              <point x="-110.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-logging:commons-logging:jar:1.1.1">
+              <point x="83.0" y="5.5" />
+              <point x="565.0" y="6355.083750404922" />
+              <point x="645.0" y="6643.583750404922" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/org.glassfish.hk2:hk2-api:jar:2.4.0-b34/org.glassfish.hk2.external:aopalliance-repackaged:jar:2.4.0-b34">
+              <point x="56.0" y="11.0" />
+              <point x="1381.0" y="2664.5837504049223" />
+              <point x="1461.0" y="2695.5837504049223" />
+              <point x="-123.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.zookeeper:zookeeper:jar:3.4.5">
+              <point x="83.0" y="19.642857142856883" />
+              <point x="565.0" y="6369.226607547779" />
+              <point x="645.0" y="7399.583750404922" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11/org.scala-lang:scalap:jar:2.11.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11/org.scala-lang:scalap:jar:2.11.0/org.scala-lang:scala-compiler:jar:2.11.0">
+              <point x="51.5" y="-0.0" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/io.netty:netty:jar:3.8.0.Final">
+              <point x="92.0" y="8.708333333333485" />
+              <point x="565.0" y="2284.2920837382553" />
+              <point x="645.0" y="3535.5837504049223" />
+              <point x="-47.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.commons:commons-compress:jar:1.4.1">
+              <point x="83.0" y="21.214285714285325" />
+              <point x="565.0" y="6370.798036119208" />
+              <point x="645.0" y="7483.583750404922" />
+              <point x="-96.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.twitter:chill_2.11:jar:0.8.0/com.esotericsoftware:kryo-shaded:jar:3.0.3/org.objenesis:objenesis:jar:2.1">
+              <point x="74.0" y="11.0" />
+              <point x="1381.0" y="201.0" />
+              <point x="1461.0" y="232.0" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-server:jar:2.22.2">
+              <point x="92.0" y="5.041666666666515" />
+              <point x="565.0" y="2280.6254170715883" />
+              <point x="645.0" y="3199.5837504049223" />
+              <point x="-83.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6" target="org.apache.hadoop:hadoop-common:jar:2.2.0/commons-configuration:commons-configuration:jar:1.6/commons-collections:commons-collections:jar:3.2.1">
+              <point x="119.0" y="-14.66666666666697" />
+              <point x="955.0" y="6796.917083738255" />
+              <point x="1035.0" y="6617.798829770002" />
+              <point x="-110.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.2.0">
+              <point x="83.0" y="17.600000000000023" />
+              <point x="955.0" y="512.8267290249432" />
+              <point x="-173.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/javax.servlet:servlet-api:jar:2.5">
+              <point x="83.0" y="-10.214285714285325" />
+              <point x="565.0" y="6339.369464690637" />
+              <point x="645.0" y="5677.583750404922" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.curator:curator-recipes:jar:2.4.0/org.apache.curator:curator-framework:jar:2.4.0">
+              <point x="92.0" y="-0.0" />
+              <point x="-101.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.hadoop:hadoop-client:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0/org.apache.hadoop:hadoop-yarn-client:jar:2.2.0/com.google.inject:guice:jar:3.0/javax.inject:javax.inject:jar:1">
+              <point x="47.0" y="-11.0" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.commons:commons-math:jar:2.1">
+              <point x="83.0" y="-18.07142857142844" />
+              <point x="565.0" y="6331.512321833494" />
+              <point x="645.0" y="5257.583750404922" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.json4s:json4s-jackson_2.11:jar:3.2.11/org.json4s:json4s-core_2.11:jar:3.2.11/org.json4s:json4s-ast_2.11:jar:3.2.11">
+              <point x="96.5" y="-11.0" />
+              <point x="1381.0" y="2474.5837504049223" />
+              <point x="1461.0" y="2443.5837504049223" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.apache.commons:commons-crypto:jar:1.0.0">
+              <point x="92.0" y="20.625" />
+              <point x="565.0" y="2296.2087504049223" />
+              <point x="645.0" y="4675.2" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-common:jar:2.22.2/javax.annotation:javax.annotation-api:jar:1.2">
+              <point x="83.0" y="-14.666666666666515" />
+              <point x="955.0" y="2958.5600623582773" />
+              <point x="1035.0" y="2905.5837504049223" />
+              <point x="-114.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2" target="org.apache.spark:spark-core_2.11:jar:2.1.0/org.glassfish.jersey.core:jersey-client:jar:2.22.2/javax.ws.rs:javax.ws.rs-api:jar:2.0.1">
+              <point x="83.0" y="-16.5" />
+              <point x="955.0" y="2679.0837504049223" />
+              <point x="1035.0" y="2569.5837504049223" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.spark:spark-core_2.11:jar:2.1.0" target="org.apache.spark:spark-core_2.11:jar:2.1.0/com.ning:compress-lzf:jar:1.0.3">
+              <point x="92.0" y="-3.208333333333485" />
+              <point x="565.0" y="2272.3754170715883" />
+              <point x="645.0" y="1981.5837504049223" />
+              <point x="-78.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/org.apache.hadoop:hadoop-auth:jar:2.2.0">
+              <point x="83.0" y="16.5" />
+              <point x="565.0" y="6366.083750404922" />
+              <point x="645.0" y="7231.583750404922" />
+              <point x="-74.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0" target="org.apache.hadoop:hadoop-common:jar:2.2.0/xmlenc:xmlenc:jar:0.52">
+              <point x="83.0" y="-16.5" />
+              <point x="565.0" y="6333.083750404922" />
+              <point x="645.0" y="5341.583750404922" />
+              <point x="-51.5" y="-0.0" />
+            </edge>
+            <edge source="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-server:jar:1.9" target="org.apache.hadoop:hadoop-common:jar:2.2.0/com.sun.jersey:jersey-server:jar:1.9/asm:asm:jar:3.1">
+              <point x="83.0" y="-0.0" />
+              <point x="-38.0" y="-0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8" x="-250.0" y="6473.0" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkTutorial/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkTutorial/src/main/java/com/qunar/sparkStreaming/SparkStreamingKafkaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="class#2222:2451" expanded="false" />
+            <element signature="method#call#0;class#2222:2451" expanded="false" />
+            <element signature="class#2509:2725" expanded="false" />
+            <element signature="method#call#0;class#2509:2725" expanded="false" />
+            <element signature="class#2803:3009" expanded="false" />
+            <element signature="method#call#0;class#2803:3009" expanded="false" />
+            <element signature="class#3027:3240" expanded="false" />
+            <element signature="method#call#0;class#3027:3240" expanded="false" />
           </folding>
         </state>
       </provider>
