@@ -14,6 +14,7 @@
         <module>SparkTutorial</module>
         <module>ShellTutorial</module>
         <module>HiveTutorial</module>
+        <module>RedisTutorial</module>
     </modules>
 
     <properties>
@@ -30,6 +31,7 @@
         <openCsv.version>2.3</openCsv.version>
         <hive.hcatalog.version>2.0.0</hive.hcatalog.version>
         <kafka.client.version>0.8.2.11</kafka.client.version>
+        <jedis.version>2.9.0</jedis.version>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +72,13 @@
                 <artifactId>spark-streaming-kafka-0-8_2.11</artifactId>
                 <version>${spark.version}</version>
             </dependency>
+            <!--spark MLlib-->
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-mllib_2.11</artifactId>
+                <version>${spark.version}</version>
+            </dependency>
+
 
             <!--hadoop-->
             <dependency>
@@ -135,13 +144,20 @@
                 <version>${hive.hcatalog.version}</version>
             </dependency>
 
+            <!--Jedis (Redis Client)-->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <!--<dependency>-->
-            <!--<groupId>com.google.guava</groupId>-->
-            <!--<artifactId>guava</artifactId>-->
+        <!--<groupId>com.google.guava</groupId>-->
+        <!--<artifactId>guava</artifactId>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
@@ -151,6 +167,8 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_2.11</artifactId>
         </dependency>
+
+
     </dependencies>
 
 

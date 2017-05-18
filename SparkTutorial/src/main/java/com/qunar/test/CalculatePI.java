@@ -10,7 +10,7 @@ import java.util.List;
  * Created by zhipengwu on 17-3-10.
  */
 public class CalculatePI {
-    public static int NUM_SAMPLES=10000000;
+    public static int NUM_SAMPLES=100000;
 
     public static void main(String[] args) {
         SparkConf conf=new SparkConf().setMaster("local").setAppName("CalculatePI");
