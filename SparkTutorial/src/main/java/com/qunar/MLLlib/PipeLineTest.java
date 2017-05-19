@@ -78,5 +78,17 @@ public class PipeLineTest {
         for (Row r : rows.collectAsList()) {
             System.out.println("(" + r.get(0) + ", " + r.get(1) + ") -> prob=" + r.get(2) + ", prediction=" + r.get(3));
         }
+
+        System.out.println("#####使用test数据验证模型1的预测效果#####");
+        Dataset<Row> results1 = model1.transform(test);
+        Dataset<Row> rows1 = results1.select("features", "label", "probability", "prediction");
+        for (Row r : rows1.collectAsList()) {
+            System.out.println("(" + r.get(0) + ", " + r.get(1) + ") -> prob=" + r.get(2) + ", prediction=" + r.get(3));
+        }
+
+
+
+
+
     }
 }
