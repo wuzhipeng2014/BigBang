@@ -58,7 +58,7 @@ public class MRCommonModel extends Configured implements Tool {
         conf.setBoolean("mapred.output.compress", true);
         conf.setClass("mapred.output.compression.codec", GzipCodec.class, CompressionCodec.class);
         // 传递变量
-//        conf.setStrings("target", targetKey);
+        // conf.setStrings("target", targetKey);
 
         Job job = Job.getInstance(conf);
         job.setJobName("SuggestionList_ZhipengWu");

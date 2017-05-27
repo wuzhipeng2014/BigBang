@@ -3,8 +3,7 @@ package com.qunar.multiThreading;
 import org.junit.Test;
 
 /**
- * java多线程练习 Created by zhipengwu on 17-5-27.
- * 继承自Tread类实现多线程创建
+ * java多线程练习 Created by zhipengwu on 17-5-27. 继承自Tread类实现多线程创建
  */
 public class CreateMultiThread extends Thread {
     @Override
@@ -23,7 +22,7 @@ public class CreateMultiThread extends Thread {
     @Test
     public void runCreateThread() {
         int i = 0;
-        //直接创建此类的实例，并调用其start方法实现多线程运行
+        // 直接创建此类的实例，并调用其start方法实现多线程运行
         CreateMultiThread createMultiThread = new CreateMultiThread();
         createMultiThread.start();
         while (i++ < 10) {
