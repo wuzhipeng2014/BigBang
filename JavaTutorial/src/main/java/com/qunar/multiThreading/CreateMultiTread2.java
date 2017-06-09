@@ -19,11 +19,22 @@ public class CreateMultiTread2 implements Runnable {
     }
 
     public static void main(String[] args) {
+
+        String mainThreadName = Thread.currentThread().getName(); //得到当前运行的线程的名字
+        System.out.println("主线程的名称为： "+mainThreadName);
         int i = 0;
-        CreateMultiTread2 createMultiThread = new CreateMultiTread2();
         // 实现Runable接口的线程的运行方法
-        Thread thread = new Thread(new CreateMultiTread2());
+        Thread thread = new Thread(new CreateMultiTread2(),"实现runable接口的线程");
         thread.start();
+
+
+        String threadName = thread.getName();
+
+        System.out.println("创建的线程的名字为： "+threadName);
+
+
+
+
         while (i++ < 10) {
             System.out.println("主线程:    " + i);
             try {

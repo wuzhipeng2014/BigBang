@@ -21,6 +21,7 @@ public class CreateMultiThread extends Thread {
 
     @Test
     public void runCreateThread() {
+
         int i = 0;
         // 直接创建此类的实例，并调用其start方法实现多线程运行
         CreateMultiThread createMultiThread = new CreateMultiThread();
