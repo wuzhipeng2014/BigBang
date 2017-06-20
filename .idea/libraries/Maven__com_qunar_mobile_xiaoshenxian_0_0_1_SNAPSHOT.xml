@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.qunar.mobile:xiaoshenxian:0.0.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/xiaoshenxian/0.0.1-SNAPSHOT/xiaoshenxian-0.0.1-20170306.070822-76.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/xiaoshenxian/0.0.1-SNAPSHOT/xiaoshenxian-0.0.1-20170619.092255-80.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/xiaoshenxian/0.0.1-SNAPSHOT/xiaoshenxian-0.0.1-20170306.070822-76-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/xiaoshenxian/0.0.1-SNAPSHOT/xiaoshenxian-0.0.1-20170619.092255-80-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/xiaoshenxian/0.0.1-SNAPSHOT/xiaoshenxian-0.0.1-20170306.070822-76-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/xiaoshenxian/0.0.1-SNAPSHOT/xiaoshenxian-0.0.1-20170619.092255-80-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

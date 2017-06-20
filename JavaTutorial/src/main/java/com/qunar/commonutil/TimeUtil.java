@@ -1,13 +1,17 @@
 package com.qunar.commonutil;
 
+import com.google.common.base.Strings;
+import org.apache.commons.lang3.time.DateUtils;
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import org.apache.commons.lang3.time.DateUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created by zhipengwu on 16-8-29.
@@ -56,6 +60,36 @@ public class TimeUtil {
         return formatedTime;
     }
 
+    /**
+     * 将yyyy-MM-dd HH:mm:ss:SSS 形式的时间转换为jodatime的 Datetime类型
+     * @param time
+     * @return
+     */
+    public static DateTime getDateTime(String time){
+        if (Strings.isNullOrEmpty(time)){
+            return null;
+        }
+        DateTimeFormatter fmt= DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss:SSS");
+        return fmt.parseDateTime(time);
+    }
+
+    /**
+     * 将时间字符串转换为jodatime的Datetime类型
+     * time: 表示时间的字符串
+     * format: time 的时间格式,如: yyyy-MM-dd HH:mm:ss:SSS ; MM/dd/yyyy hh:mm:ss.SSS; yyyyMMdd HH:mm:ss:SSS
+     *
+     * 将yyyy-MM-dd HH:mm:ss:SSS 形式的时间转换为jodatime的 Datetime类型
+     * @param time
+     * @return
+     */
+    public static DateTime getDateTime(String time,String format){
+        if (Strings.isNullOrEmpty(time)){
+            return null;
+        }
+        DateTimeFormatter fmt= DateTimeFormat.forPattern(format);
+        return fmt.parseDateTime(time);
+    }
+
 
     public static void main(String[] args) {
 //        System.out.println(formateTime("2016081ff9"));
@@ -64,6 +98,18 @@ public class TimeUtil {
 //        System.out.println(formateTime(""));
 
         String actionTime="2017-01-15 07:12:50:232";
+         actionTime="20170115 07:12:50:232";
+
+        DateTime dateTime1 = getDateTime(actionTime, "yyyyMMdd HH:mm:ss:SSS");
+        //Datatime类型时间格式化输出
+        System.out.println(dateTime1.toString("yyyyMMdd HH:mm:ss:SSS"));
+
+        DateTimeFormatter fmt= DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss:SSS");
+//        DateTimeFormatter fmt = ISODateTimeFormat.dateTime();
+        DateTime dateTime = fmt.parseDateTime(actionTime);
+        System.out.println(dateTime.getDayOfMonth());
+        System.out.println();
+
         try {
             Date date = DateUtils.parseDate(actionTime,"yyyy-MM-dd HH:mm:ss:SSS");
             System.out.println(date.toString());

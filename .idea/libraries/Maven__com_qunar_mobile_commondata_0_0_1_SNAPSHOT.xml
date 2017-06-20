@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.qunar.mobile:commondata:0.0.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/commondata/0.0.1-SNAPSHOT/commondata-0.0.1-20161220.025425-309.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/commondata/0.0.1-SNAPSHOT/commondata-0.0.1-20170620.024621-310.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/commondata/0.0.1-SNAPSHOT/commondata-0.0.1-20161220.025425-309-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/commondata/0.0.1-SNAPSHOT/commondata-0.0.1-20170620.024621-310-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/commondata/0.0.1-SNAPSHOT/commondata-0.0.1-20161220.025425-309-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/mobile/commondata/0.0.1-SNAPSHOT/commondata-0.0.1-20170620.024621-310-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
