@@ -98,17 +98,13 @@ public class TimeUtil {
 //        System.out.println(formateTime(""));
 
         String actionTime="2017-01-15 07:12:50:232";
-         actionTime="20170115 07:12:50:232";
+//         actionTime="20170115 07:12:50:232";
 
-        DateTime dateTime1 = getDateTime(actionTime, "yyyyMMdd HH:mm:ss:SSS");
+//        DateTime dateTime1 = getDateTime(actionTime, "yyyyMMdd HH:mm:ss:SSS");
         //Datatime类型时间格式化输出
-        System.out.println(dateTime1.toString("yyyyMMdd HH:mm:ss:SSS"));
+//        System.out.println(dateTime1.toString("yyyyMMdd HH:mm:ss:SSS"));
 
-        DateTimeFormatter fmt= DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss:SSS");
-//        DateTimeFormatter fmt = ISODateTimeFormat.dateTime();
-        DateTime dateTime = fmt.parseDateTime(actionTime);
-        System.out.println(dateTime.getDayOfMonth());
-        System.out.println();
+
 
         try {
             Date date = DateUtils.parseDate(actionTime,"yyyy-MM-dd HH:mm:ss:SSS");
