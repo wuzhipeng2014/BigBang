@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/MachineLearningTutorial/SVM.iml" filepath="$PROJECT_DIR$/MachineLearningTutorial/SVM.iml" />
       <module fileurl="file://$PROJECT_DIR$/ShellTutorial/ShellTutorial.iml" filepath="$PROJECT_DIR$/ShellTutorial/ShellTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/SparkTutorial/SparkTutorial.iml" filepath="$PROJECT_DIR$/SparkTutorial/SparkTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PythonTutorial/crawler.iml" filepath="$PROJECT_DIR$/PythonTutorial/crawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/PythonTutorial/machineLearning.iml" filepath="$PROJECT_DIR$/PythonTutorial/machineLearning.iml" />
       <module fileurl="file://$PROJECT_DIR$/PythonTutorial/machineLearnings.iml" filepath="$PROJECT_DIR$/PythonTutorial/machineLearnings.iml" />
     </modules>
