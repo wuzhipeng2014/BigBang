@@ -93,7 +93,8 @@ public class FileUtil {
     }
 
     public static Iterable<String> getFileIterator(String fileName) throws IOException {
-        String filePath = FileUtil.class.getClassLoader().getResource(fileName).getPath();
+//        String filePath = FileUtil.class.getClassLoader().getResource(fileName).getPath();
+        String filePath=fileName;
         final LineIterator lineIterator = FileUtils.lineIterator(new File(filePath), Charsets.UTF_8.name());
         return new Iterable<String>() {
             public Iterator<String> iterator() {

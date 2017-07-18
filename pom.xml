@@ -15,6 +15,7 @@
         <module>ShellTutorial</module>
         <module>HiveTutorial</module>
         <module>RedisTutorial</module>
+        <module>NLPTutorial</module>
     </modules>
 
     <properties>
@@ -32,6 +33,7 @@
         <hive.hcatalog.version>2.0.0</hive.hcatalog.version>
         <kafka.client.version>0.8.2.11</kafka.client.version>
         <jedis.version>2.9.0</jedis.version>
+        <corenlp.version>3.6.0</corenlp.version>
     </properties>
 
     <dependencyManagement>
@@ -148,6 +150,25 @@
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
+            </dependency>
+
+            <!--stanford nlp -->
+            <dependency>
+                <groupId>edu.stanford.nlp</groupId>
+                <artifactId>stanford-corenlp</artifactId>
+                <version>${corenlp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.stanford.nlp</groupId>
+                <artifactId>stanford-corenlp</artifactId>
+                <version>${corenlp.version}</version>
+                <classifier>models</classifier>
+            </dependency>
+            <dependency>
+                <groupId>edu.stanford.nlp</groupId>
+                <artifactId>stanford-corenlp</artifactId>
+                <version>${corenlp.version}</version>
+                <classifier>models-chinese</classifier>
             </dependency>
             
         </dependencies>
