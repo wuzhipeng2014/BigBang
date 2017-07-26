@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 from scipy.stats import skew
 from scipy.stats.stats import pearsonr
 
+import xgboost as xgb
+
 # 读入训练数据
 train = pd.read_csv('../resource/train.csv')
 test = pd.read_csv('../resource/test.csv')
@@ -43,7 +45,7 @@ skewed_feats = skewed_feats[skewed_feats > 0.75]
 skewed_feats = skewed_feats.index
 all_data[skewed_feats] = np.log1p(all_data[skewed_feats])
 
-## ?
+## 将分类特征数字化表示
 all_data = pd.get_dummies(all_data)
 
 # 对空的特征值进行中值填充
@@ -68,6 +70,7 @@ def rmse_cv(model):
 
 
 # Ridge模型中需要调节的参数为alpha-用来度量模型的适应性
+# 模型 α||w||_2 2范数
 model_ridge = Ridge()
 
 alphas = [0.05, 0.1, 0.3, 1, 3, 5, 10, 15, 30, 50, 75]
@@ -82,7 +85,7 @@ plt.show()
 print '最小的rmse为:'
 print cv_ridge.min()
 
-## lasso 模型
+## lasso 模型 α||w||_1 1范数
 model_lasso = LassoCV(alphas=[1, 0.1, 0.001, 0.0005]).fit(X_train, y)
 print "lasso rmse: "
 print rmse_cv(model_lasso).mean()
