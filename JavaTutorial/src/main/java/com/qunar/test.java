@@ -1,16 +1,16 @@
 package com.qunar;
 
-import com.google.common.collect.Lists;
-import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
-
 /**
  * Created by zhipengwu on 17-2-8.
  */
 public class test {
     public static void main(String[] args) {
-        Lists.newArrayList();
+        int count=0;
+        for (int i = 1; i < 9002; i++) {
+            System.out.print(String.format("\"%s\",",i));
+        }
+
+//        Lists.newArrayList();
 
 //        String time="1499904016786";
 ////        DateTime dateTime = TimeUtil.getDateTime(time);
@@ -31,14 +31,14 @@ public class test {
 //        System.out.println(period.getSeconds());
 //        System.out.println(period.getMillis());
 //
-//        System.out.println(period.getMinutes());
-        DateTimeFormatter fmt= DateTimeFormat.forPattern("yyyyMMddHHmmssSSS");
-        DateTimeFormatter fmt1= DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss:SSS");
-
-        DateTime dateTime = fmt.parseDateTime("20170713080032000");
-        System.out.println( dateTime.toString(fmt1));
-        System.out.println(dateTime.getMillis());
-        System.out.println(DateTime.now().getMillis());
+////        System.out.println(period.getMinutes());
+//        DateTimeFormatter fmt= DateTimeFormat.forPattern("yyyyMMddHHmmssSSS");
+//        DateTimeFormatter fmt1= DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss:SSS");
+//
+//        DateTime dateTime = fmt.parseDateTime("20170713080032000");
+//        System.out.println( dateTime.toString(fmt1));
+//        System.out.println(dateTime.getMillis());
+//        System.out.println(DateTime.now().getMillis());
 
 //        String s = dateTime1.toString(fmt);
 //        System.out.println(s);
