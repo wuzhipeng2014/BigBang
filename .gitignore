@@ -19,3 +19,5 @@ out/*
 .idea/*
 PythonTutorial/gettingStarted/*.pyc
 将删除 PythonTutorial/gettingStarted/classObject.pyc
+*.csv
+

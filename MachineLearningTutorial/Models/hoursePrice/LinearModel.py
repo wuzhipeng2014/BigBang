@@ -39,7 +39,7 @@ print 'get_dummies前all_data.size'
 
 
 
-## 将分类特征数字化表示
+## 将分类特征数字化表示 (onehot编码方式)
 all_data = pd.get_dummies(all_data)
 
 print 'get_dummies后all_data.size'
