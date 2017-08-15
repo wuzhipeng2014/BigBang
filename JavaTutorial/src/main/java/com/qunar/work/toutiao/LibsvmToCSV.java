@@ -11,8 +11,13 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 /**
  * Created by zhipengwu on 17-7-27. 将libsvm格式数据转换为csv
@@ -20,46 +25,75 @@ import java.util.Map;
 public class LibsvmToCSV {
     public static Logger logger = LoggerFactory.getLogger(LibsvmToCSV.class);
 
+    public static Map<String, Integer> featurNametoIndexMap;
+    //计算分类特征出现频次最高的条目
+    public static Map<String,Integer> countCategoryFeatureMap=Maps.newHashMap();
+
     public static void main(String[] args) throws IOException {
-        String baseDir = "/home/zhipengwu/Innovation/BigBang/JavaTutorial/src/main/resources/";
-        String inputFileName = "neg_toutiao_20170723_1wLine.txt";
-        String outputFileName = inputFileName + ".csv";
+//        String baseDir = "/home/zhipengwu/Innovation/BigBang/JavaTutorial/src/main/resources/";
+//        // 输入文件名称参数
+//        String inputFileName = "hotel_train_20170813.libsvm";
+//        String libsvmDescFile = baseDir + "libsvm格式说明20170813.txt"; // libsvm列名文件
+
+        String baseDir = args[0];
+        // 输入文件名称参数
+        String inputFileName = args[1];
+        String libsvmDescFile = baseDir + args[2]; // libsvm列名文件
+
+
+        String outputFileName = baseDir+inputFileName + ".csv";
         String inputFile = baseDir + inputFileName;
         String outputFile = baseDir + outputFileName;
-        int dim = 30; // 转换后的维数
-
-//        String inputFile = "/home/zhipengwu/Innovation/BigBang/JavaTutorial/src/main/resources/pos_traffic_20170723";
-//        String outputFile = "/home/zhipengwu/Innovation/BigBang/JavaTutorial/src/main/resources/pos_traffic_20170723.csv";
-        String libsvmDescFile = "/home/zhipengwu/Innovation/BigBang/JavaTutorial/src/main/resources/libsvm格式说明_20170727.txt"; // libsvm列名文件
-
+        int dim = 29; // 转换后的维数
         FileWriter csvFile = new FileWriter(outputFile);
         Map<Integer, LibsvmDes> libsvmDesMap = loadLibsvmDes(libsvmDescFile);
-        //csv文件中列名到列位置的映射
-        Map<String, Integer> featurNametoIndexMap = createfeaturNametoIndexMap(libsvmDescFile);
-        //输出csv文件各列名
-//        for (String key:featurNametoIndexMap.keySet()){
-//            System.out.println(String.format("%s\t%s",key,featurNametoIndexMap.get(key)));
-//        }
+        // csv文件中列名到列位置的映射
+        featurNametoIndexMap = createfeaturNametoIndexMap(libsvmDescFile);
+
+        // ===========输出csv文件各列名================
+        FileWriter csv_colum_name_desc = new FileWriter(outputFile + ".desc");
+        for (String key : featurNametoIndexMap.keySet()) {
+            System.out.println(String.format("%s\t%s", key, featurNametoIndexMap.get(key)));
+            csv_colum_name_desc.append(String.format("%s\t%s\n", key, featurNametoIndexMap.get(key)));
+        }
+        csv_colum_name_desc.flush();
+        csv_colum_name_desc.close();
+
 
         LineIterator lineIterator = FileUtils.lineIterator(new File(inputFile));
         while (lineIterator.hasNext()) {
             String line = lineIterator.nextLine();
             List<String> rowList = parseLine(line, libsvmDesMap, featurNametoIndexMap, dim);
+            // ===========生成gbdt的输入特征==========
+            rowList = createFeartureforGBDT(rowList);
+
             String csvrow = rowList.toString();
+
             csvrow = csvrow.substring(1, csvrow.length() - 1).replaceAll(" ", "");
-            if (csvrow.endsWith(",")){
-                csvrow=csvrow.substring(0,csvrow.length()-1);
+            if (csvrow.endsWith(",")) {
+                csvrow = csvrow.substring(0, csvrow.length() - 1);
             }
+            // csvrow=csvrow.replaceAll("\\[","");
+            // csvrow=csvrow.replaceAll("\\]","");
+            // csvrow=csvrow.replaceAll("\\(","");
+            // csvrow=csvrow.replaceAll("\\)","");
             csvFile.append(csvrow + "\n");
-            System.out.println(rowList.toString());
+            // System.out.println(rowList.toString());
         }
         csvFile.flush();
         csvFile.close();
         lineIterator.close();
 
+        //获取分类特征中出现次数较高的值
+        Map<String, Integer> stringIntegerMap = sortByValue(countCategoryFeatureMap);
+       for (String key:stringIntegerMap.keySet()){
+           System.out.println(key+"\t"+stringIntegerMap.get(key));
+       }
+
     }
 
-    public static List<String> parseLine(String line, Map<Integer, LibsvmDes> libsvmDesMap, Map<String, Integer> featurNametoIndexMap, int dim) {
+    public static List<String> parseLine(String line, Map<Integer, LibsvmDes> libsvmDesMap,
+            Map<String, Integer> featurNametoIndexMap, int dim) {
         List<List<String>> rowslist = Lists.newArrayList();
         List<String> rowList = Lists.newArrayList();
         if (Strings.isNullOrEmpty(line)) {
@@ -73,7 +107,7 @@ public class LibsvmToCSV {
         //
         for (String item : split) {
             int indexcolon = item.indexOf(":");
-            if (indexcolon < 0) { //第一列
+            if (indexcolon < 0) { // 第一列
                 rowList.set(0, item);
                 continue;
             }
@@ -84,7 +118,13 @@ public class LibsvmToCSV {
                 LibsvmDes libsvmDes = libsvmDesMap.get(index);
                 if (libsvmDes != null && featurNametoIndexMap.containsKey(libsvmDes.featureName)) {
                     Integer featureIndex = featurNametoIndexMap.get(libsvmDes.featureName);
-                    rowList.set(featureIndex, libsvmDes.featureValue.replaceAll(", ", "-"));
+                    String pre_s = rowList.get(featureIndex);
+                    if (Strings.isNullOrEmpty(pre_s)) {
+                        rowList.set(featureIndex, String.format("%s", libsvmDes.featureValue.replaceAll(", ", "-")));
+                    } else {
+                        rowList.set(featureIndex,
+                                String.format("%s#%s", pre_s, libsvmDes.featureValue.replaceAll(", ", "-")));
+                    }
                 }
 
             }
@@ -93,8 +133,7 @@ public class LibsvmToCSV {
         return rowList;
     }
 
-
-    //建立csv列名到列位置的映射
+    // 建立csv列名到列位置的映射
     public static Map<String, Integer> createfeaturNametoIndexMap(String libsvmDesFile) {
         Map<String, Integer> featurNametoIndexMap = Maps.newHashMap();
         int count = 1;
@@ -126,7 +165,7 @@ public class LibsvmToCSV {
 
     }
 
-    //加载libsvm描述文件到map
+    // 加载libsvm描述文件到map
     public static Map<Integer, LibsvmDes> loadLibsvmDes(String file) {
         Map<Integer, LibsvmDes> libsvmDesMap = Maps.newHashMap();
 
@@ -173,6 +212,110 @@ public class LibsvmToCSV {
         public String featureName;
         public String featureValue;
         public int index;
+    }
+
+    // 为gbdt输入构建特征
+    public static List<String> createFeartureforGBDT(List<String> rowList) throws IOException {
+        DecimalFormat dcmFmt = new DecimalFormat("0.00");
+        //platform, model, allCity 三列移到list的末尾
+        Integer platformIndex = featurNametoIndexMap.get("platform");
+        Integer modelIndex = featurNametoIndexMap.get("model");
+        Integer allCityIndex = featurNametoIndexMap.get("allCity");
+        String platform=rowList.get(platformIndex);
+        String model= rowList.get(modelIndex);
+        String allCity=rowList.get(allCityIndex);
+        String formate_model="model-"+ rowList.get(modelIndex);
+        String formate_allCity="allCity-"+rowList.get(allCityIndex);
+        if(countCategoryFeatureMap.containsKey(formate_model)){
+            Integer integer = countCategoryFeatureMap.get(formate_model);
+            integer++;
+            countCategoryFeatureMap.put(formate_model,integer);
+        }else {
+            countCategoryFeatureMap.put(formate_model,1);
+        }
+
+        if(countCategoryFeatureMap.containsKey(formate_allCity)){
+            Integer integer = countCategoryFeatureMap.get(formate_allCity);
+            integer+=1;
+            countCategoryFeatureMap.put(formate_allCity,integer);
+        }else {
+            countCategoryFeatureMap.put(formate_allCity,1);
+        }
+
+
+        for (int i = 0; i < rowList.size(); i++) {
+            String s = rowList.get(i);
+            String value = "-10";
+            if (Strings.isNullOrEmpty(s)) {
+                continue;
+            }
+            if (s.contains("[") && (s.contains("]") || s.contains(")"))) {
+                s = s.substring(1, s.length() - 1);
+            }
+            // 处理范围类型的特征
+            if (s.contains("-")) {
+                String[] split = s.split("-");
+                if (split.length == 2 && isNum(split[0])) {
+                    if (split[1].equalsIgnoreCase(":")) {
+                        value = split[0];
+                    } else if (isNum(split[1])) {
+                        String format = dcmFmt.format((Double.valueOf(split[1]) + Double.valueOf(split[0])) / 2);
+                        if (Double.valueOf(format)>20000){
+                            format="-10";
+                        }
+                        value = String
+                                .valueOf(format);
+                    }
+                }
+            }
+            // 处理性别特征
+            if (s.equalsIgnoreCase("F")) {
+                value = "2";
+            }
+            if (s.equalsIgnoreCase("M")) {
+                value = "1";
+            }
+            if (s.equalsIgnoreCase("X")) {
+                value = "0";
+            }
+
+            // 处理数字特征
+            if (isNum(s)) {
+                if (Double.valueOf(s)>200000){
+                    s="-10";
+                }
+                value = s;
+            }
+            rowList.set(i, value);
+        }
+
+//        rowList.remove(platformIndex);
+//        rowList.remove(modelIndex);
+//        rowList.remove(allCityIndex);
+
+        rowList.add(platform);
+        rowList.add(model);
+        rowList.add(allCity);
+        return rowList;
+    }
+
+    public static boolean isNum(String str) {
+
+        try {
+            new BigDecimal(str);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public static <K, V extends Comparable<? super V>> Map<K, V> sortByValue(Map<K, V> map) {
+        Map<K, V> result = new LinkedHashMap<>();
+        Stream<Map.Entry<K, V>> st = map.entrySet().stream();
+
+        st.sorted(Comparator.comparing(e -> e.getValue())).forEach(e -> result.put(e.getKey(), e.getValue()));
+
+        return result;
     }
 
 }
