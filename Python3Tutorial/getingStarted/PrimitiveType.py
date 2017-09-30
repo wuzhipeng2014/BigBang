@@ -1,6 +1,7 @@
 # coding:utf-8
 
 
+## 字符串类型
 #无需转义,直接打印字符串
 print(r'\\\\\\tttt\\\\')
 
@@ -34,8 +35,6 @@ print(10%3)
 # utf-8是一种变长的编码方式,较长使用的字符如a-z是以一个字节进行编码的,但是汉字可能以3个字节进行编码.比较适合进行网络传输
 
 
-
-
 print(ord('c'))
 
 print(chr(99))
@@ -51,13 +50,63 @@ print(bytes)
 print(ord("中"))
 
 ## 字符串输出进行格式化
-
 print('abc%s' %('妹妹'))
 
-
 test1='{name}abc{age}'.format(name='妹妹',age=3)
-
 print(test1 )
+
+
+## list数据类型
+namelist=['name','age','time']
+print(namelist)
+
+## 获取list的最后一个字符
+print(namelist[-1])
+## 获取list的倒数第二个字符
+print(namelist[-2])
+
+## 把元素插入到list中的指定位置
+namelist.insert(5,'hometown')
+namelist.insert(2,'river')
+print(namelist)
+## 删除list中指定位置的元素
+print('pop namelist')
+print(namelist.pop(1))
+
+print(namelist)
+
+## 修改list中指定位置上的元素
+namelist[0]="first"
+print(namelist)
+
+## list中元素的类型可以不相同,同时list中的元素可以为一个list
+mixList=[1,2,3,['a','b','c'],'more']
+print(mixList)
+print(mixList[3][0])
+
+## tuple   (tuple与list非常相似,但是tuple一旦初始化就不能修改),增强了代码安全性
+classmates=("michel",'bob','tracy')
+print(classmates)
+
+##需要注意的是定义只有一个元素的tuple时,需要加逗号(,)
+singleTuple=(1,)
+print(singleTuple)
+
+## 注意这种形式与上中形式的差别
+singleTuple=(1)
+print(singleTuple)
+
+## tuple内的元素不可变指的是指向的变量地址不能改变,但是指向地址内的内容是可以改变的
+
+t = ('a', 'b', ['A', 'B'])
+t[2][0]='X'
+t[2][1]="Y"
+
+print(t)
+
+
+
+
 
 
 
