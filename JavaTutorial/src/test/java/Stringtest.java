@@ -1,6 +1,12 @@
 import com.clearspring.analytics.util.Lists;
+import com.google.common.base.Joiner;
 import com.qunar.work.toutiao.LibsvmToCSV;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.LineIterator;
+import org.junit.Test;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
@@ -112,5 +118,30 @@ public class Stringtest {
             e.printStackTrace();
         }
         System.out.println(feartureforGBDT.toString());
+    }
+
+
+    @Test
+    public void joinFile(){
+        String inputfile="/home/zhipengwu/secureCRT/kylinInputFiles_20170908.txt";
+        String outputfile="/home/zhipengwu/secureCRT/kylinoutputFiles_20170908.txt";
+        try {
+            LineIterator lineIterator = FileUtils.lineIterator(new File(inputfile));
+            FileWriter fw=new FileWriter(outputfile);
+            List<String> list=Lists.newArrayList();
+            while (lineIterator.hasNext()){
+                String line=lineIterator.nextLine();
+                list.add(line);
+
+            }
+
+            String join = Joiner.on(",").skipNulls().join(list);
+            fw.append(join);
+            fw.flush();
+            fw.close();
+            System.out.println(join);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
