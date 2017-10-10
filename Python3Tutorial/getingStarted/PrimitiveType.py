@@ -52,6 +52,9 @@ print(ord("中"))
 ## 字符串输出进行格式化
 print('abc%s' %('妹妹'))
 
+## 字符串中包含特征符号
+print('pass rate %d %%' %(90))
+
 test1='{name}abc{age}'.format(name='妹妹',age=3)
 print(test1 )
 
@@ -103,6 +106,9 @@ t[2][0]='X'
 t[2][1]="Y"
 
 print(t)
+
+
+
 
 
 
