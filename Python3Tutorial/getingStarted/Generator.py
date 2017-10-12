@@ -30,8 +30,10 @@ while True:
         x=next(g)
         print('g:',x)
     except StopIteration as e:
-        print('Generator return value is :',e.value)
+        print('Generator return value is :', e.value)
         break
+
+
 
 
 
