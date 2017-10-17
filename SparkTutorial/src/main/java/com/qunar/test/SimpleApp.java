@@ -12,8 +12,8 @@ public class SimpleApp {
     public static void main(String[] args) {
 //        String logfile="/home/zhipengwu/secureCRT/homepage_local_entrance_single_entry_uv_sta_new_pooled_20170428.txt";
         String logfile="data/input/homepage_local_entrance_single_entry_uv_sta_new_pooled_20170428.txt";
-//        SparkConf conf=new SparkConf().setMaster("local").setAppName("simple Application");
-        SparkConf conf=new SparkConf().setAppName("simple Application");
+        SparkConf conf=new SparkConf().setMaster("local").setAppName("simple Application");
+//        SparkConf conf=new SparkConf().setAppName("simple Application");
         JavaSparkContext sc=new JavaSparkContext(conf);
         JavaRDD<String> logData = sc.textFile(logfile).cache();
         long countAs = logData.filter(new Function<String, Boolean>() {
