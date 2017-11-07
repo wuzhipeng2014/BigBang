@@ -9,7 +9,7 @@ public class ToutiaoClickLog {
     public String requestId;
     public String connection_type;
     public String productId;
-//    public String adType;
+    public String adType;
     public String department;
     public String price;
     public String bannerType;
