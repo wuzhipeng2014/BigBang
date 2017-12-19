@@ -16,7 +16,7 @@ import java.util.Iterator;
 /**
  * Created by zhipengwu on 17-2-20.
  */
-public class HelloSpark {
+public class HelloSparkTest {
 
     public static void main(String[] args) {
 
