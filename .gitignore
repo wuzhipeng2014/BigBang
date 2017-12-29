@@ -21,3 +21,14 @@ PythonTutorial/gettingStarted/*.pyc
 将删除 PythonTutorial/gettingStarted/classObject.pyc
 *.csv
 
+JavaTutorial/src/main/resources/*.desc
+JavaTutorial/src/main/resources/*.libsvm
+JavaTutorial/src/main/resources/*
+
+Python3Tutorial/resource/*
+PythonTutorial/featureDiscretization/*
+Python3Tutorial/getingStarted/ClassTest/__pycache__/
+Python3Tutorial/getingStarted/IOTest/*.txt
+PythonTutorial/apps/*.pkl
+PythonTutorial/crawler/cookie.txt
+PythonTutorial/resource/*.pyc
