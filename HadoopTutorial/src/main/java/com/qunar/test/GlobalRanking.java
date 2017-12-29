@@ -1,9 +1,9 @@
 package com.qunar.test;
 
-import com.qunar.MRCommon.MRCommonModel;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.compress.CompressionCodec;
@@ -26,7 +26,7 @@ import java.io.IOException;
  * Created by zhipengwu on 17-12-21. 利用mapreduce 实现全局排序
  */
 public class GlobalRanking extends Configured implements Tool {
-    public static class MRCommonModelMapper extends Mapper<Object, Text, Text, Text> {
+    public static class MRCommonModelMapper extends Mapper<Object, Text, LongWritable, Text> {
         @Override
         protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
             String line=value.toString();
@@ -34,17 +34,17 @@ public class GlobalRanking extends Configured implements Tool {
                 String[] split = line.split("\t");
                 if (split.length==3){
                     if (!split[2].equals("null")) {
-                        Double similarity = Double.valueOf(split[2]);
-                        context.write(new Text(split[2]),new Text(line));
+                        Long similarity = ((Double)(Double.valueOf(split[2])*10000)).longValue();
+                        context.write(new LongWritable(similarity) ,new Text(line));
                     }
                 }
             }
         }
     }
 
-    public static class MRCommonModelReducer extends Reducer<Text, Text, NullWritable, Text> {
+    public static class MRCommonModelReducer extends Reducer<LongWritable, Text, NullWritable, Text> {
         @Override
-        protected void reduce(Text key, Iterable<Text> values, Context context)
+        protected void reduce(LongWritable key, Iterable<Text> values, Context context)
                 throws IOException, InterruptedException {
             super.reduce(key, values, context);
             for(Text value:values){
@@ -81,23 +81,27 @@ public class GlobalRanking extends Configured implements Tool {
         job.setJarByClass(GlobalRanking.class);
         job.setMapperClass(MRCommonModelMapper.class);
         job.setReducerClass(MRCommonModelReducer.class);
-        job.setMapOutputKeyClass(Text.class);
+        job.setMapOutputKeyClass(LongWritable.class);
         job.setMapOutputValueClass(Text.class);
         job.setOutputKeyClass(NullWritable.class);
         job.setOutputValueClass(Text.class);
-
-        //todo 全局排序
-        TotalOrderPartitioner.setPartitionFile(job.getConfiguration(), new Path(paritionPath));
-        InputSampler.Sampler<Text, Text> sampler = new InputSampler.RandomSampler(0.01, 1000, 100);
-        InputSampler.writePartitionFile(job, sampler);
-        job.setPartitionerClass(TotalOrderPartitioner.class);
-
-       
 
 
         FileInputFormat.setInputPaths(job, inputPaths);
         FileOutputFormat.setOutputPath(job, new Path(outputPath));
         job.setNumReduceTasks(numReduceTasks);
+
+        //todo 全局排序
+        TotalOrderPartitioner.setPartitionFile(job.getConfiguration(), new Path(paritionPath));
+        InputSampler.Sampler<Text, Text> sampler = new InputSampler.RandomSampler(0.01, 1000, 100);
+        InputSampler.writePartitionFile(job, sampler);
+
+
+        job.setPartitionerClass(TotalOrderPartitioner.class);
+
+       
+
+
 
         boolean success = job.waitForCompletion(true);
         return success ? 0 : 1;

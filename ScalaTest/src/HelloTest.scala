@@ -27,8 +27,8 @@ object HelloTest {
     dotProduct(x, y) / (norm(x) * norm(y))
   }
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName(appName).setMaster(master)
-    new SparkContext(conf)
+//    val conf = new SparkConf().setAppName(appName).setMaster(master)
+//    new SparkContext(conf)
   }
 
 }
