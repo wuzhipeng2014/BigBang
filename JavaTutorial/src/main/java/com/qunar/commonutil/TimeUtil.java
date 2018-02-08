@@ -92,6 +92,15 @@ public class TimeUtil {
 
 
     public static void main(String[] args) {
+
+
+        long timestamp =Long.valueOf("1517241020000");
+        DateTime dateTime=new DateTime(timestamp);
+        String datetimeString = dateTime.toString("yyyy-MM-dd HH:mm:ss");
+
+        System.out.println(datetimeString);
+
+
 //        System.out.println(formateTime("2016081ff9"));
 //        System.out.println(formateTime("dfhhfgtghhg"));
 //        System.out.println(formateTime(null));
