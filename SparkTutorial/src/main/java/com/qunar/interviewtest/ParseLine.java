@@ -1,4 +1,4 @@
-package com.qunar.test;
+package com.qunar.interviewtest;
 
 import au.com.bytecode.opencsv.CSVReader;
 import org.apache.spark.SparkConf;

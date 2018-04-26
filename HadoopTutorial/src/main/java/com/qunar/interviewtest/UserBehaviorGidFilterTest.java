@@ -1,4 +1,4 @@
-package com.qunar.test;
+package com.qunar.interviewtest;
 
 /**
  * Created by zhipengwu on 17-2-20.

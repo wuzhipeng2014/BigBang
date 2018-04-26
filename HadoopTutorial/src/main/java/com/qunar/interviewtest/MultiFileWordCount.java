@@ -1,4 +1,4 @@
-package com.qunar.test;
+package com.qunar.interviewtest;
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.FSDataInputStream;

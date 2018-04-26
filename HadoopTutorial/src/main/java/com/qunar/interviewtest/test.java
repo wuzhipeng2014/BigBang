@@ -1,4 +1,4 @@
-package com.qunar.test;
+package com.qunar.interviewtest;
 
 import com.google.common.base.Joiner;
 

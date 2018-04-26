@@ -1,4 +1,4 @@
-package com.qunar.test;
+package com.qunar.interviewtest;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.streaming.Durations;
